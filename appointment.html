@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .appointment {
+            padding: 80px 0;
+        }
+
+        .appointment-left h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .appointment-left p {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+
+        .time-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .time-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .appointment-right {
+            background-color: #f8f8f8;
+            padding: 40px;
+        }
+
+        .form-wrap input,
+        .form-wrap textarea,
+        .form-wrap select {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #dcdcdc;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .form-select select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #fff;
+        }
+
+        .form-control:focus{
+            border-color: #80bdff;
+            box-shadow: none;
+
+        }
+        .appointment{
+            overflow: hidden;
+        }
+        .hover-btn {
+            position: relative;
+            display: inline-block;
+            background: #3face4;
+            padding: 0px 35px;
+            color: #fff;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 48px;
+            border: 1px solid #3face4;
+            outline: none ;
+            box-shadow: none;
+            text-align: center;
+            cursor: pointer;
+            transition: all 300ms linear 0s;
+            border-radius: 5px;
+            text-transform: capitalize;
+        }
+        .hover-btn:hover {
+            color:#3face4;
+            background-color: #fff;
+        }
+
+        /* Added CSS styles */
+        .form-group {
+            position: relative;
+        }
+
+        .disease-select {
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .disease-select-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .disease-select:hover .disease-select-hover {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .disease-option {
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .disease-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        #nice-select {
+            border: 1px solid #ced4da;
+            /* margin-bottom: 10px; */
+            background: #ffffff !important;
+        }
+        .form-select .nice-select {
+            border: none;
+            border-radius: 0px;
+            height: 40px;
+            background: #f9f9ff !important;
+            padding-left: 45px;
+            padding-right: 40px;
+            width: 100%;
+        }
+        .nice-select:focus {
+            border-color: #999;
+        }
+        .nice-select {
+            -webkit-tap-highlight-color: transparent;
+            background-color: #fff;
+            border-radius: 5px;
+            border: solid 1px #e8e8e8;
+            box-sizing: border-box;
+            clear: both;
+            cursor: pointer;
+            display: block;
+            float: left;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            height: 42px;
+            line-height: 40px;
+            outline: none;
+            padding-left: 18px;
+            padding-right: 30px;
+            position: relative;
+            text-align: left !important;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: nowrap;
+            width: auto;
+        }
+        .nice-select.open:after {
+            -webkit-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+        .nice-select:after {
+            border-bottom: 2px solid #999;
+            border-right: 2px solid #999;
+            content: '';
+            display: block;
+            height: 5px;
+            margin-top: -4px;
+            pointer-events: none;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            -webkit-transform-origin: 66% 66%;
+            -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+            width: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="appointment">
+        <section class="appointment-area">
+            <div class="container">
+                <div class="row justify-content-between align-items-center appointment-wrap">
+                    <div class="col-lg-5 col-md-6">
+                        <h1>Servicing Hours</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="time-list">
+                            <li>
+                                <span>Monday-Friday</span>
+                                <span>08.00 am - 10.00 pm</span>
+                            </li>
+                            <li>
+                                <span>Saturday</span>
+                                <span>08.00 am - 10.00 pm</span>
+                            </li>
+                            <li>
+                                <span>Sunday</span>
+                                <span>Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="appointment-right">
+                            <form class="form-wrap">
+                                <h2>Book an Appointment</h2>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <input type="text" class="form-control" name="name" placeholder="Patient Name" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Patient Name&#39;">
+<input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Phone&#39;">
+<input type="email" class="form-control" name="email" placeholder="Email Address" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Email Address&#39;">
+<input id="datepicker1" name="dop" class="dates form-control" placeholder="Date of Birth" type="text">
+<div class="form-select" id="service-select">
+<select style="display: none;">
+<option data-display="">Disease Type</option>
+<option value="1">Type One</option>
+<option value="2">Type Two</option>
+<option value="3">Type Three</option>
+<option value="4">Type Four</option>
+</select><div class="nice-select" tabindex="0"><span class="current">Disease Type</span><ul class="list"><li data-value="Disease Type" class="option selected">Disease Type</li><li data-value="1" class="option">Type One</li><li data-value="2" class="option">Type Two</li><li data-value="3" class="option">Type Three</li><li data-value="4" class="option">Type Four</li></ul></div>
+</div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="hover-btn">Book Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
