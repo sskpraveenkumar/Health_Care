@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image and Paragraph with z-index</title>
+  <style>
+    .container {
+      position: relative;
+    }
+
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .text {
+      position: absolute;
+      top: 500px;
+      left: 500px;
+      z-index: 2;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="home.jpg" alt="Your Image" class="image">
+    <div class="text">
+      <p>This is a sample paragraph.</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.blog{
+    overflow: hidden;
+   /* border:2px solid black;*/
+  }
+  .procedure p {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+   /* border: 2px solid red;*/
+  }
+  .procedure h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    /*border: 2px solid red;*/
+  }
+  .blogcontent_gap {
+    height: 20px;
+  }
+  .procedurefrontgap{
+    height:120px;
+  }
+  .blogendgap{
+    height:80px;
+  }
+
+
+
+  
+/* CSS for the hover effect on card title */
+.card-body:hover h4.card-title {
+color: #61aaf8;
+}
+/*type1 hovering a content*/
+.card {
+transition: transform 0.3s; /* Add smooth transition */
+}
+.card:hover {
+transform: scale(1.05); /* Apply zoom effect on hover */
+}
+
+/*type2 hovering a content*/
+/* .card {
+position: relative;
+overflow: hidden;
+}
+
+.card:hover .card-img-top {
+transform: scale(1.1); /* Apply zoom effect on hover 
+transform-origin: center center;
+}
+
+.card-img-top {
+transition: transform 0.3s; /* Add smooth transition 
+height: 100%;
+width: 100%;
+object-fit: cover;
+}*/
+.meta svg:hover{
+color: #61aaf8;
+}
+.calenderproblem{
+width:40px;
+padding:6px
+}
+.meta svg{
+transform: translateX(5px);
+}
+.blogpara{
+line-height: 24px;
+font-size: 14px;
+font-family: "Roboto", sans-serif;
+font-weight: normal;
+color: #777777;
+}
+.blogtitle{
+font-family: "Roboto", sans-serif;
+font-size: 24px;
+font-weight:bold;
+}
+.blogdowngap{
+height:100px;
+}

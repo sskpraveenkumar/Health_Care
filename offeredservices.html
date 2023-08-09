@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offered Services</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <style>
+        .OfferedServices {
+            overflow: hidden;
+            /*border: 2px solid red;*/
+        }
+        .procedure p {
+            line-height: 24px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #777777;
+            /*border: 2px solid red;*/
+        }
+        .procedure h1 {
+            font-size: 36px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            color: #000000;
+            /*border: 2px solid red;*/
+        }
+        .proceduregap {
+            height: 20px;
+        }
+        /*.OfferedServicesgap {
+            height: 120px;
+        }*/
+        .services{
+            padding:0px 100px;
+            /*border:2px solid blue;*/
+
+        }
+        /* Global styles */
+        .offeredservicepara{
+            font-family: "Roboto", sans-serif;
+            color: #777777;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* OfferedServices section */
+        .OfferedServices {
+            padding: 80px 0;
+            background-color:white;
+            /*border: 2px solid pink;*/
+        }
+        .OfferedServices .section-title-wrap {
+            margin-bottom: 60px;
+        }
+        .OfferedServices h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #000000;
+            /*margin-bottom: 40px;*/
+            text-align: center;
+            /*border:2px solid orange;*/
+        }
+        /* Service cards */
+        .single_service {
+            padding: 0px 10px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 30px;
+           /* border: 2px solid green;*/
+        }
+        .single_service .lnr {
+            font-size: 40px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .single_service h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 15px;
+            list-style: none;
+            transition: color 0.3s ease-in-out;
+        }
+        .single_service h4:hover {
+            color: #61aaf8;
+        }
+        .single_service p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .single_service svg{
+            color: #61aaf8;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="OfferedServices">
+        <section class="procedure_category section_gap">
+            <div class="container procedurecontainer">
+                <div class="row justify-content-center section-title-wrap">
+                    <div class="OfferedServicesgap"></div>
+                    <div class="col-md-8 col-lg-5 text-center procedure">
+                        <h1>Our Offered Services</h1>
+                    </div>
+                    <div class="proceduregap"></div>
+                    <div class="col-md-8 col-lg-6 text-center procedure">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="OfferedServicesendgap"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row services">
+            <div class="col-lg-3 col-md-6">
+                <div class="single_service">
+                    <svg width="50" height="50" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6 14.374c.63.746.959 1.56.945 2.496-.019 1.29-.681 2.262-1.613 3.06-1.085.928-2.397 1.32-3.8 1.43a8.59 8.59 0 0 1-.924.003 1.268 1.268 0 0 1-.39-.069c-.503-.182-.58-.555-.18-.906.391-.344.814-.654 1.192-1.013.289-.277.551-.581.782-.908.245-.344.266-.742.115-1.2-.242.113-.474.203-.687.325-.446.255-.697.245-1.08-.091-.372-.327-.738-.66-1.108-.99a1.77 1.77 0 0 0-.172-.118c-.224.207-.433.414-.657.603-.296.25-.59.257-.782.035-.18-.207-.151-.482.11-.749.184-.19.395-.353.552-.49-.42-.513-.843-.933-1.147-1.426-.356-.576.084-1.09.358-1.653-.524-.033-.955.063-1.301.328-.33.268-.629.574-.888.911-.251.31-.447.666-.67.999-.21.314-.426.645-.87.599-.306-.032-.733-.584-.762-1-.064-.946.056-1.867.498-2.723.81-1.567 2.086-2.586 3.748-3.131.696-.229 1.398-.156 2.108.06.04-.045.085-.09.122-.142 1.918-2.68 4.532-4.382 7.627-5.392 1.054-.344 2.12-.657 3.245-.686.28-.007.561-.029.842-.025.366.004.548.133.533.49a15.645 15.645 0 0 1-.194 2.065c-.451 2.569-1.687 4.772-3.291 6.782-.625.782-1.328 1.501-1.996 2.248-.08.088-.163.172-.264.278Zm-6.243 1.193c.418.332.722.592 1.05.82a.412.412 0 0 0 .355-.002c.518-.275 1.049-.538 1.531-.869 1.72-1.177 3.276-2.545 4.583-4.173.71-.883 1.359-1.814 2.048-2.742L14.928 4.89c-.132.061-.26.13-.385.205-.78.518-1.575 1.015-2.327 1.569-.844.62-1.558 1.379-2.196 2.215-1.057 1.387-1.68 3.006-2.462 4.54-.078.152-.034.46.076.596.287.356.643.656 1.028 1.035.603-.625 1.133-1.209 1.703-1.753.328-.294.68-.561 1.051-.798.196-.133.445-.178.624.026.181.207.025.41-.102.575-.15.188-.314.365-.489.53a45.61 45.61 0 0 1-1.096 1.06c-.313.29-.64.565-.996.877ZM20.59 3.293c-1.71.003-3.22.639-4.759 1.156l-.027.107 3.54 2.984c.606-.962 1.07-2.546 1.246-4.247Zm-8.47 16.56c1.44-.27 2.556-1 3.183-2.34.417-.893.126-1.727-.367-2.52l-2.415 1.845c.624 1.102.305 2.073-.401 3.016ZM8.534 9.429c-2.058-.338-4.904 2.446-4.72 4.358.84-1.328 1.92-2.128 3.543-1.84l1.177-2.518Z"></path>
+                        <path d="M4.36 19.724c.06-.11.126-.311.257-.45a61.117 61.117 0 0 1 1.515-1.545c.15-.15.34-.244.535-.084.206.168.116.369-.005.535-.418.57-.837 1.141-1.279 1.694-.131.15-.298.266-.486.336-.278.11-.547-.11-.537-.486Z"></path>
+                        <path d="M8.937 17.678c.297.008.512.275.38.482a14.48 14.48 0 0 1-1.104 1.494c-.143.171-.4.147-.582-.017a.444.444 0 0 1-.083-.585c.11-.181.239-.35.387-.502.219-.233.45-.455.687-.669a2.01 2.01 0 0 1 .315-.203Z"></path>
+                        <path d="M6.29 15.418a2.48 2.48 0 0 1-.2.359c-.373.466-.752.927-1.136 1.383a1.008 1.008 0 0 1-.25.195c-.192.119-.387.118-.542-.056-.16-.181-.124-.382.036-.537a66.202 66.202 0 0 1 1.598-1.504c.07-.064.222-.074.325-.055.062.011.105.129.169.215Z"></path>
+                        <path d="M14.751 6.886c.522-.007.924.206 1.328.543.419.348.732.72.886 1.24.357 1.202-.349 2.087-1.493 2.249-.928.13-1.715-.251-2.287-.977-.49-.622-.504-1.346-.164-2.042.343-.702.96-1.006 1.73-1.013ZM13.65 8.812c.133.231.23.526.43.706.206.187.507.28.778.383.357.135.665-.008.908-.26.234-.244.243-.55.128-.863-.18-.492-.601-.739-1.024-.961-.38-.2-.74-.08-.956.294-.11.19-.16.416-.264.7Z"></path>
+                      </svg>
+                    <a href="#"></a>
+                        <h4>24/7 Emergency</h4>
+                        <div class="offeredservicepara">
+                    <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single_service">
+                    <svg width="50" height="50" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="m12 6.178-.86-.885c-2.02-2.076-5.723-1.36-7.06 1.25-.578 1.131-.743 2.725.13 4.737H2.917C.363 4.444 7.915.684 11.789 4.252c.072.066.143.134.212.205.067-.07.138-.139.21-.204 3.877-3.569 11.427.19 8.873 7.027h-1.293c.873-2.012.708-3.606.13-4.736-1.337-2.61-5.04-3.328-7.06-1.252l-.86.886ZM5.056 14.88h1.578C7.913 16.3 9.66 17.83 12 19.434c2.338-1.604 4.088-3.134 5.367-4.554h1.578c-1.518 1.88-3.768 3.9-6.946 6-3.177-2.1-5.427-4.12-6.945-6Zm9.902-8.023a.6.6 0 0 0-1.134.059l-1.917 6.711-1.749-4.37a.6.6 0 0 0-1.056-.11L6.88 12.48H3a.6.6 0 1 0 0 1.2h4.2a.6.6 0 0 0 .499-.268l1.767-2.65 1.977 4.941a.6.6 0 0 0 1.134-.059l1.917-6.711 1.749 4.37a.6.6 0 0 0 .556.377H21a.6.6 0 1 0 0-1.2h-3.794l-2.249-5.623Z" clip-rule="evenodd"></path>
+                      </svg>
+                    <a href="#"></a>
+                        <h4>Expert Consultation</h4>
+                        <div class="offeredservicepara">
+                    <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single_service">
+                    <svg width="50" height="50" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.146 2.546a.6.6 0 0 1 .748.4l.349 1.147a5.975 5.975 0 0 1 3.277-.973c1.209 0 2.335.357 3.277.973l.348-1.147a.6.6 0 1 1 1.149.348l-.492 1.622A5.982 5.982 0 0 1 17.52 9.12h.6a.6.6 0 0 0 .6-.6v-.6a.6.6 0 1 1 1.2 0v.6a1.8 1.8 0 0 1-1.8 1.8h-.6v1.2h1.8a.6.6 0 1 1 0 1.2h-1.8v1.2h.6a1.8 1.8 0 0 1 1.8 1.8v.6a.6.6 0 1 1-1.2 0v-.6a.6.6 0 0 0-.6-.6h-.6a6 6 0 1 1-12 0h-.6a.6.6 0 0 0-.6.6v.6a.6.6 0 1 1-1.2 0v-.6a1.8 1.8 0 0 1 1.8-1.8h.6v-1.2h-1.8a.6.6 0 1 1 0-1.2h1.8v-1.2h-.6a1.8 1.8 0 0 1-1.8-1.8v-.6a.6.6 0 0 1 1.2 0v.6a.6.6 0 0 0 .6.6h.6c0-1.637.657-3.121 1.719-4.204l-.492-1.622a.6.6 0 0 1 .4-.748ZM6.72 10.32v4.8a4.8 4.8 0 0 0 4.2 4.764V10.32h-4.2Zm5.4 0v9.564a4.8 4.8 0 0 0 4.2-4.764v-4.8h-4.2Zm4.2-1.2a4.786 4.786 0 0 0-1.6-3.579 4.78 4.78 0 0 0-3.2-1.221 4.78 4.78 0 0 0-3.2 1.221 4.787 4.787 0 0 0-1.6 3.579h9.6Z"></path>
+                      </svg>
+                    <a href="#"></a>
+                    <h4>Intensive Care</h4>
+                    <div class="offeredservicepara">
+                    <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="single_service">
+                    <svg width="50" height="50" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4 19.2s1.2 0 1.2-1.2-1.2-4.8-6-4.8-6 3.6-6 4.8c0 1.2 1.2 1.2 1.2 1.2h9.6ZM10.827 18a.298.298 0 0 1-.027-.005c.002-.317.2-1.236.912-2.064.663-.776 1.827-1.531 3.888-1.531 2.06 0 3.225.756 3.888 1.531.712.828.91 1.749.912 2.064l-.01.002a.309.309 0 0 1-.016.003h-9.547Zm4.773-7.2a2.4 2.4 0 1 0 0-4.802 2.4 2.4 0 0 0 0 4.802Zm3.6-2.4a3.599 3.599 0 1 1-7.2 0 3.6 3.6 0 0 1 7.2 0Zm-8.476 5.136a7.048 7.048 0 0 0-1.476-.297 8.843 8.843 0 0 0-.848-.04c-4.8 0-6 3.6-6 4.8 0 .801.4 1.2 1.2 1.2h5.06A2.686 2.686 0 0 1 8.4 18c0-1.211.453-2.45 1.308-3.484a6.35 6.35 0 0 1 1.016-.98Zm-2.42.864A6.592 6.592 0 0 0 7.2 18H3.6c0-.312.197-1.236.912-2.069.654-.763 1.79-1.507 3.792-1.53V14.4ZM4.2 9a3.6 3.6 0 1 1 7.2 0 3.6 3.6 0 0 1-7.2 0Zm3.6-2.4a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8Z"></path>
+                      </svg>
+                    <a href="/#"></a>
+                    <h4>Family Planning</h4>
+                    <div class="offeredservicepara">
+                    <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

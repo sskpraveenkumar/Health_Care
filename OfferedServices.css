@@ -1,0 +1,102 @@
+.OfferedServices {
+    overflow: hidden;
+    /*border: 2px solid red;*/
+}
+.procedure p {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    /*border: 2px solid red;*/
+}
+.procedure h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    /*border: 2px solid red;*/
+}
+.proceduregap {
+    height: 20px;
+}
+/*.OfferedServicesgap {
+    height: 120px;
+}*/
+.services{
+    padding:0px 100px;
+    /*border:2px solid blue;*/
+
+}
+/* Global styles */
+.offeredservicepara{
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* OfferedServices section */
+.OfferedServices {
+    padding: 80px 0px;
+    background-color:white;
+    /*border: 2px solid pink;*/
+}
+.OfferedServices .section-title-wrap {
+    margin-bottom: 60px;
+}
+.OfferedServices h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+    /*margin-bottom: 40px;*/
+    text-align: center;
+    /*border:2px solid orange;*/
+}
+/* Service cards */
+.single_service {
+    padding: 0px 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+   /* border: 2px solid green;*/
+}
+.single_service .lnr {
+    font-size: 40px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+    display: block;
+}
+.single_service h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+    list-style: none;
+    transition: color 0.3s ease-in-out;
+}
+.single_service h4:hover {
+    color: #61aaf8;
+}
+.single_service p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.single_service svg{
+    color: #61aaf8;
+}
+
+@media all and (max-width: 300px){
+    .OfferedServices {
+        padding: 0px 0px;
+    }
+    .services{
+        padding:0px 0px;
+        
+    
+    }
+}
+.single_service:hover > h4{
+    color: #61aaf8;
+}

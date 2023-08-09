@@ -1,0 +1,82 @@
+.procedureimage {
+    /*border: 2px solid green;*/
+    height:55vh;
+}
+
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Add some margin between the images */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity here */
+    color: #fff; /* Adjust the text color of the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin:20px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+.border_line {
+   
+    background: #fff;
+    width: 100%;
+    height: 1px;
+}
+.overlay h5 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Vertically center the text */
+}
+.border_line {
+    height: 1px;
+    /*width: 230px;*/
+    width:70%;
+    background-color: #fff;
+    margin: 0 auto 10px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .categories_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .categories_text h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  @media all and (max-width: 300px){
+    .overlay{
+        margin:5px;
+    }
+    .categories_text h5 {
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
+  }
+  @media all and (max-width: 1100px){
+    .procedureimage {
+        height:auto;
+    }
+  }

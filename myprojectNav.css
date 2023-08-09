@@ -1,0 +1,55 @@
+.pravnav{
+  margin: 8px;
+  cursor:pointer;
+}
+#navbold{
+color:#000000;
+font-size: 15px;
+font-weight: 500;
+padding:0px 0px 0px 25px;
+}
+#drop1:hover{
+  background-color:#3face4;
+}
+#navbold:hover{
+color: #3face4;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  from {
+       opacity: 0;
+  }
+  to {
+       opacity: 1;
+  }
+}
+.myprojectNav_firstcontent{
+        width:250px;
+        /*border:2px solid blue;*/
+        display:flex;
+        justify-content: flex-end;
+        padding-bottom:10px;
+}
+.myprojectNav_secondcontent{
+  width:740px;
+  /*border:2px solid blue;*/
+  padding-right: 150px;
+}
+@media all and (max-width: 752px){
+  .myprojectNav{
+    overflow: hidden;
+  }
+
+}
+.header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
+  color: #3face4;
+}
+ a:active{
+  color:red;
+}

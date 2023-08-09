@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zooming</title>
+    <style>
+    .bg{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: none;
+    position: relative;    
+    border-radius: 20px 20px 0px 0px;
+    transition:.5s;
+}
+.bg_img
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 5px 5px;
+}
+.bg_img > img
+{  
+    transform: scale(1);
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 20px 20px 5px 5px;
+}
+.bg > button
+{
+    height:35px;
+    width: 120px;
+    border: 1px solid #EBB830;
+    border-radius: 5px;
+    background-color: #EBB830;
+    color: white;
+    font-family: font_regular;
+    font-size: 1rem;
+    position: absolute;
+}
+.bg_img > img:hover
+{
+    transform: scale(1.1);
+}
+.group
+{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.group1
+{
+    width:45%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafe;
+    border-radius: 20px 20px;
+}
+.group2
+{
+    width:45%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafe;
+    border-radius: 20px 20px;
+}
+.bg1
+{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: none;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+    transition:.5s;
+}
+.bg1 > button
+{
+    height:35px;
+    width: 120px;
+    border: 1px solid #317BD6;
+    border-radius: 5px;
+    background-color: #317BD6;
+    color: white;
+    position: absolute;
+    font-family: font_regular;
+    font-size: 1rem;
+}
+.bg1_img
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px 20px 5px 5px;
+}
+.bg1_img > img
+{  
+    transform: scale(1);
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 20px 20px 5px 5px;
+}
+.bg1_img > img:hover
+{
+    transform: scale(1.1);
+}
+.padding
+{
+    padding: 8%;
+}
+.group1_txt
+{
+    color:#234262;
+    font-family: special;
+    font-size: 1.7rem;
+}
+.medium
+{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.medium > div
+{
+    display: flex;
+    align-items: center;
+}
+@media all and (max-width:1130px)
+{
+    .first
+    {
+        display: none;
+    }
+}
+@media all and (max-width:850px)
+{
+    .news > p
+{
+    width:70%;
+    font-family: font_regular;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.recent_news > p
+{
+    font-size: 3rem;
+}
+.group1_txt
+{
+    color:#234262;
+    font-family: special;
+    font-size: 1.4rem;
+}
+} 
+@media all and (max-width:570px)
+{
+    .head > label
+{
+    font-size: 3rem;
+
+}
+    .news > p
+{
+    line-height: 20px;
+    font-size: 1rem;
+}
+.recent_news > p
+{
+    font-size: 2rem;
+}
+.group1_txt
+{
+    color:#234262;
+    font-family: special;
+    font-size: 1.1rem;
+}
+.medium
+{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.medium > div
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+} 
+    </style>
+</head>
+<body>
+    <section>
+        <section class="group" id="group">
+            <div class="group1">
+                <div class="bg">
+                    <div class="bg_img">
+                        <img src="b1.jpg" height="100%" width="100%">
+                    </div>
+                     <button><span>Group Study</span></button>
+                </div>
+                <div class="padding">
+                    <div class="group1_txt">
+                        <span>Those Other College Expenses You Aren’t Thinking About</span>
+                    </div>
+                    <div class="medium">
+                        <div>
+                            <div class="medium_img">
+                                <img src="b2.jpg" height="30px" width="30px">
+                            </div> 
+                            <!-- <div class="medium_txt">
+                                <sapn>May 10, 2020</sapn>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>|</span>
+                            </div>
+                        </div>  
+                        <div>
+                            <div class="medium_img">
+                                <img src="cmd.png" height="20px" width="20px">
+                            </div>
+                            <div class="medium_txt">
+                                <sapn>01 comments</sapn>
+                            </div>
+                        </div>                  -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="group2">
+                <div class="bg1">
+                    <div class="bg1_img">
+                        <img src="b2.jpg" height="100%" width="100%">
+                    </div>
+                    <button><span>Hall life</span></button>
+                </div>
+                <div class="padding">
+                    <div class="group1_txt">
+                        <span>Those Other College Expenses You Aren’t Thinking About</span>
+                    </div>
+                    <div class="medium">
+                        <div>
+                            <div class="medium_img">
+                                <img src="calen.jpg" height="30px" width="30px">
+                            </div>
+                            <div class="medium_txt">
+                                <sapn>May 10, 2020</sapn>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span>|</span>
+                            </div>
+                        </div>  
+                        <div>
+                            <div class="medium_img">
+                                <img src="cmd.png" height="20px" width="20px">
+                            </div>
+                            <div class="medium_txt">
+                                <sapn>01 comments</sapn>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </section>
+    
+</body>
+</html>

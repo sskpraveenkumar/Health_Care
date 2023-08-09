@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>star</title>
+    <style>
+        .star {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(./star/emptystar.png); /* Replace with your star image */
+            background-size: contain;
+            cursor: pointer;
+        }
+        
+        .star.active {
+            background-image: url(./star/goldenstar.png); /* Replace with your filled star image */
+        }
+    </style>
+</head>
+<body>
+    <div id="rating-stars">
+        <span class="star" data-value="1"></span>
+        <span class="star" data-value="2"></span>
+        <span class="star" data-value="3"></span>
+        <span class="star" data-value="4"></span>
+        <span class="star" data-value="5"></span>
+    </div>
+    <div id="rating-value"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.star').click(function() {
+                var value = $(this).data('value');
+                $('.star').removeClass('active');
+                $(this).addClass('active');
+                $('.star:lt(' + value + ')').addClass('active');
+                $('#rating-value').text('You have rated: ' + value + ' stars');
+                // You can perform any other actions or AJAX requests here based on the selected rating
+            });
+        });
+    </script>
+</body>
+</html>

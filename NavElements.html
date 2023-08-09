@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elements</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+
+    
+    <link rel="stylesheet" href="navheading.css">
+    <link rel="stylesheet" href="myprojectNav.css">
+    <link rel="stylesheet" href="bannerarea.css">
+    <link rel="stylesheet" href="samplebutton.css">
+    <link rel="stylesheet" href=" formelements.css">
+    <link rel="stylesheet" href="footer.css">
+   
+   
+    <style>
+      /* sample text css*/
+      .sampletext{
+          line-height: 24px;
+          font-size: 16px;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+          color: #777777;
+          
+      }
+      .h3heading{
+          color:black;
+          font-weight: 600;
+      }
+      .sample-text b {
+          font-weight: bold;
+          color: #3face4;
+      }
+      .sampletext p i {
+          color: #3face4;
+          font-style: italic;
+          
+      }
+      .sampletext p sup{
+          color: #3face4;
+          font-style: italic;
+      }
+      .sampletext p sub{
+          color: #3face4;
+          font-style: italic;
+      }
+      .sampletext del{
+          color: #3face4;
+      }
+      .sampletext u{
+          color: #3face4;
+      }
+      .sampletextupgap{
+        height:100px;
+      }
+      .sampletextparagap{
+        height:20px;
+      }
+      .sampletextbottomgap{
+        height:30px;
+      }
+      #hr2 {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+      }
+      .samplebuttontopgap{
+        height:50px;
+      }
+
+
+
+
+
+
+
+
+      .allignmentparatopgap{
+        height:50px;
+       }
+       .whole-wrap h3{
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        color: #000000;
+       }
+       .whole-wrap p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 24px;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        color: #777777;
+       }
+    
+       .textalignmentrightgap{
+        height:40px;
+       }
+    
+       #hr3 {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+      }
+      #hrline1 {
+        border: 0;
+        height: 0.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+      }
+      .allignmentheadinggap{
+        height:30px;
+      }
+      .section-top-border h3{
+        font-size: 24px;
+        font-weight: 600;
+    
+      }
+      .section-top-border h4{
+        font-size: 18px;
+       
+      }
+      .definitiontopgap{
+        height:50px;
+      }
+      .definitionbottomgap{
+        height:20px;
+      }
+      .definitionsubgap{
+        height:15px;
+      }
+      .definitionbottomparagap{
+        height:50px;
+      }
+      .blockquotestopgap{
+        height:40px;
+      }
+      .generic-blockquote {
+        padding: 30px 50px 30px 30px;
+        background: #fff;
+        border-left: 2px solid #f8b600;
+        color: #777777;
+    }
+    blockquote {
+        margin: 0 0 1rem;
+    }
+    .blockquotebottomgap{
+        height:35px;
+    }
+    .blockquotesparabottomgap{
+        height:40px;
+    }
+    
+    
+    
+    
+    /*body {
+                background-color: #f5f7fa;
+            }*/
+    
+            .section-top-border {
+                margin: 30px auto;
+                padding: 30px;
+                /*background-color: #fff;*/
+                border-radius: 5px;
+                /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);*/
+            }
+    
+            .title_color {
+               /* text-align: center;*/
+                margin-bottom: 30px;
+                color: #323232;
+                font-size: 30px;
+            }
+    
+            .progress-table-wrap {
+                overflow-x: auto;
+            }
+    
+            .progress-table {
+                min-width: 700px;
+                margin-bottom: 0;
+                border-radius: 5px;
+            }
+    
+            .progress-table .table-head {
+                background-color: #f5f7fa;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+    
+            .progress-table .table-head .serial,
+            .progress-table .table-head .country,
+            .progress-table .table-head .visit,
+            .progress-table .table-head .percentage {
+                font-size: 18px;
+                font-weight: 700;
+                color: #323232;
+                flex-basis: 25%;
+            }
+    
+            .progress-table .table-row {
+                background-color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+    
+            .progress-table .table-row .serial,
+            .progress-table .table-row .country,
+            .progress-table .table-row .visit,
+            .progress-table .table-row .percentage {
+                font-size: 16px;
+                color: #323232;
+                flex-basis: 25%;
+            }
+    
+            .progress-table .table-row .country img {
+                width: 30px;
+                height: 20px;
+                margin-right: 10px;
+            }
+    
+            .progress-table .table-row .percentage .progress {
+                height: 10px;
+                margin-bottom: 0;
+                overflow: visible;
+                background-color: transparent;
+            }
+    
+            .progress-table .table-row .percentage .progress .progress-bar {
+               
+                background-color: #6382e6;
+                transition: width 0.6s ease;
+            }
+    
+            /* Apply column widths */
+            .progress-table .table-head .serial,
+            .progress-table .table-row .serial {
+                flex-basis: 11.83%;
+                padding-left: 30px;
+            }
+    
+            .progress-table .table-head .country,
+            .progress-table .table-row .country {
+                flex-basis: 28.07%;
+            }
+    
+            .progress-table .table-head .visit,
+            .progress-table .table-row .visit {
+                flex-basis: 19.74%;
+            }
+            .progress-table .table-row {
+                background-color: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 10px;
+            }
+            .table1topgap{
+                height:15px;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar {
+                height: 6px;
+                line-height: 5px;
+            }
+
+            .progress-table .table-row .percentage .progress .progress-bar.color-2 {
+              background-color: #e66686;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-3 {
+              background-color: #f09359;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-4 {
+              background-color: #73fbaf;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-5 {
+              background-color: #73fbaf;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-6 {
+              background-color: #6382e6;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-7 {
+              background-color: #a367e7;
+            }
+            .progress-table .table-row .percentage .progress .progress-bar.color-8 {
+              background-color: #e66686;
+          }
+          .tableendgap{
+            height:45px;
+          }
+
+
+          /*image css*/
+          .section-top-border {
+            padding: 50px 0;
+            border-top: 1px dotted #eee;
+        }
+        element.style {
+            background: url(img/elements/g1.jpg);
+        }
+        .single-gallery-image {
+            margin-top: 30px;
+            background-repeat: no-repeat !important;
+            background-position: center center !important;
+            background-size: cover !important;
+            height: 200px;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            
+        }
+        .section-top-border{
+            overflow:hidden;
+        }
+         .single-gallery-image:hover{
+            opacity:0.8;
+         }
+
+
+
+
+         /*order list css*/
+         .section-top-border{
+          line-height: 24px;
+          font-size: 14px;
+          font-family: "Roboto", sans-serif;
+          font-weight: normal;
+          color: #777777;
+      }
+          .unordered-list li {
+              position: relative;
+              padding-left: 30px;
+              line-height: 1.82em !important;
+              list-style: none;
+          }
+          .unordered-list li:before {
+              content: "";
+              position: absolute;
+              width: 14px;
+              height: 14px;
+              border: 3px solid #f8b600;
+              background: #fff;
+              top: 4px;
+              left: 0;
+              border-radius: 50%;
+          }
+          .ordered-list li {
+              list-style-type: decimal-leading-zero;
+              color: #f8b600;
+              font-weight: 500;
+              line-height: 1.82em !important;
+          }
+          .ordered-list span{
+              color:#777777;
+          }
+          .section-top-border{
+              overflow: hidden;
+          }
+          .ordered-list-alpha li {
+              margin-left: 30px;
+              list-style-type: lower-alpha;
+              color: #f8b600;
+              font-weight: 500;
+              line-height: 1.82em !important;
+          }
+          .ordered-list li {
+              /*list-style-type: decimal-leading-zero;*/
+              color: #f8b600;
+              font-weight: 500;
+              line-height: 1.82em !important;
+          }
+          .ordered-list-roman li {
+              margin-left: 30px;
+              list-style-type: lower-roman;
+              color: #f8b600;
+              font-weight: 500;
+              line-height: 1.82em !important;
+          }
+          .typography h3{
+            color:#777777;
+          }
+
+          .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+            color: #777777;
+        }
+        .typo-list {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    
+
+
+  </style>
+    
+</head>
+<body>
+    <section class="grid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Logos to the left -->
+            <div class="d-flex align-items-center  grid_firstcontent">
+              <a class="navbar-brand mr-4" href="#">
+                <div class="iconpadding">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand mr-4" href="#">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand mr-4" href="#">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1.5C6.203 1.5 1.5 6.203 1.5 12S6.203 22.5 12 22.5 22.5 17.802 22.5 12 17.797 1.5 12 1.5Zm6.667 4.84a8.736 8.736 0 0 1 2.062 5.08c-1.892-.098-4.156-.098-5.972.071-.23-.58-.465-1.148-.722-1.695 2.094-.908 3.707-2.1 4.632-3.456ZM12 3.25a8.71 8.71 0 0 1 5.584 2.013c-.952 1.202-2.445 2.25-4.304 3.04-1.018-1.881-2.188-3.5-3.436-4.774A8.79 8.79 0 0 1 12 3.249Zm-3.96.957c1.264 1.258 2.45 2.86 3.49 4.734-1.975.604-4.239.95-6.655.95a21.6 21.6 0 0 1-1.35-.044 8.755 8.755 0 0 1 4.515-5.64Zm-4.774 7.377c.498.022 1.001.033 1.51.028 2.756-.033 5.32-.465 7.525-1.172.208.432.405.875.59 1.329a5.41 5.41 0 0 0-.782.234c-3.013 1.266-5.386 3.305-6.671 5.772A8.719 8.719 0 0 1 3.25 12c0-.14.005-.279.016-.416ZM12 20.75a8.699 8.699 0 0 1-5.365-1.843c1.165-2.308 3.243-4.219 5.863-5.403.246-.115.574-.208.951-.29.313.864.592 1.76.837 2.69a31.79 31.79 0 0 1 .808 4.272A8.678 8.678 0 0 1 12 20.75Zm4.73-1.394a30.34 30.34 0 0 0-1.444-6.388c1.718-.14 3.774-.12 5.41 0a8.741 8.741 0 0 1-3.965 6.388Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand" href="#">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+                    <path d="M3 12h4.5"></path>
+                    <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+                    <path d="M16 6h3"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Menu items to the right -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+              <ul class="navbar-nav grid_secondcontent">
+                <li class="nav-item priya ">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                  <a class="nav-link" href="#">012-6532-568-9746</a>
+                </li>
+                <div class="praveenHeading"></div>
+                <li class="nav-item priya1">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M19.2 5H4.8c-.99 0-1.791.81-1.791 1.8L3 17.6c0 .99.81 1.8 1.8 1.8h14.4c.99 0 1.8-.81 1.8-1.8V6.8c0-.99-.81-1.8-1.8-1.8Zm0 12.6H4.8v-9l7.2 4.5 7.2-4.5v9ZM4.8 6.8l7.2 4.5 7.2-4.5H4.8Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <a class="nav-link" href="#">EMERGENCY@COLORLIB.COM</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+
+    <section class="myprojectNav">
+
+      <nav id="navtop" class=" navbar  navbar-expand-lg navbar-light " style="background-color:#F8F8F8">
+          <div class="container-fluid">
+              <a class="navbar-brand myprojectNav_firstcontent" href="#"><img src="logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 4.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5ZM2 9.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5ZM2.5 14a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-15Z" fill="#00a2ff" class="fill-212121 fill-3face4 fill-039ef2"></path></svg>
+              </span>
+            </button>
+
+            <div>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class=" justify-content-end navbar-nav myprojectNav_secondcontent">
+                  <li class="nav-item">
+                    <a class="nav-link pravnav"id="navbold" href="index.html" >HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pravnav" id="navbold" href="departments.html">DEPARTMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pravnav" id="navbold" href="doctors.html">DOCTORS</a>
+                  </li>
+      
+                </li>
+                <li class="nav-item dropdown dropdown-hover ">
+                  <a class="nav-link dropdown-toggle pravnav"id="navbold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PAGES</a>
+                  <ul class="dropdown-menu dropdown-menu-hover " >
+                    <li><a class="dropdown-item" id="drop1" href="about.html">ABOUT</a></li>
+                    <li><a class="dropdown-item"  id="drop1" href="services.html">SERVICES</a></li>
+                    <li><a class="dropdown-item"  id="drop1" href="NavElements.html">ELEMENTS</a></li>
+                  </ul>
+                </li>
+      
+                  </li>
+                  <li class="nav-item dropdown dropdown-hover ">
+                    <a class="nav-link dropdown-toggle pravnav"id="navbold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">BLOG</a>
+                    <ul class="dropdown-menu dropdown-menu-hover">
+                      <li><a class="dropdown-item"  id="drop1" href="blog.html">BLOG</a></li>
+                      <li><a class="dropdown-item"  id="drop1" href="blogDetails.html">BLOG DETAILS</a></li>
+                    </ul>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link pravnav"id="navbold" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+
+            </div>
+            </div>
+          </div>
+        </nav>
+    </section>
+
+
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+      <div class="container">
+      <div class="banner_content text-left departmenth2">
+      <h2>Elements</h2>
+      <div class="page_link departmentinterior">
+      <a href="index.html">Home <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+          <path d="M18.375 12H4.687"></path>
+        </svg></a>
+      <a href="NavElements.html">Elements</a>
+      </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="sampletext">
+    <div class="sampletextupgap"></div>
+    <div class="container">
+    <h3 class="text-heading title_color h3heading">Text Sample</h3>
+    <div class="sampletextparagap"></div>
+    <p class="sample-text">
+    Every avid independent filmmaker has
+    <b>Bold</b> about making that
+    <i>Italic</i> interest documentary, or short film to show off their creative prowess. Many have great ideas and want to
+    “wow” the
+    <sup>Superscript</sup> scene, or video renters with their big project. But once you have the
+    <sub>Subscript</sub> “in the can” (no easy feat), how do you move from a
+    <del>Strike</del> through of master DVDs with the
+    <u>“Underline”</u> marked hand-written title inside a secondhand CD case, to a pile of cardboard boxes full of shiny new,
+    retail-ready DVDs, with UPC barcodes and polywrap sitting on your doorstep? You need to create eye-popping artwork and
+    have your project replicated. Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner
+    with is certainly a helpful option to ensure a professional end result, but to help with your DVD replication project,
+    here are 4 easy steps to follow for good DVD replication results:
+    <div class="sampletextbottomgap"></div>
+    </p> <hr id="hr2" />
+    </div>
+    </section>
+
+
+    <section class="button-area">
+      <div class="samplebuttontopgap"></div>
+      <div class="container border-top-generic">
+      <h3 class="text-heading title_color">Sample Buttons</h3>
+      <div class="button-group-area">
+      <a href="#" class="genric-btn default">Default</a>
+      <a href="#" class="genric-btn primary">Primary</a>
+      <a href="#" class="genric-btn success">Success</a>
+      <a href="#" class="genric-btn info">Info</a>
+      <a href="#" class="genric-btn warning">Warning</a>
+      <a href="#" class="genric-btn danger">Danger</a>
+      <a href="#" class="genric-btn link">Link</a>
+      <a href="#" class="genric-btn disable">Disable</a>
+      </div>
+      <div class="button-group-area mt-10">
+      <a href="#" class="genric-btn default-border">Default</a>
+      <a href="#" class="genric-btn primary-border">Primary</a>
+      <a href="#" class="genric-btn success-border">Success</a>
+      <a href="#" class="genric-btn info-border">Info</a>
+      <a href="#" class="genric-btn warning-border">Warning</a>
+      <a href="#" class="genric-btn danger-border">Danger</a>
+      <a href="#" class="genric-btn link-border">Link</a>
+      <a href="#" class="genric-btn disable">Disable</a>
+      </div>
+      <div class="button-group-area mt-40">
+      <a href="#" class="genric-btn default radius">Default</a>
+      <a href="#" class="genric-btn primary radius">Primary</a>
+      <a href="#" class="genric-btn success radius">Success</a>
+      <a href="#" class="genric-btn info radius">Info</a>
+      <a href="#" class="genric-btn warning radius">Warning</a>
+      <a href="#" class="genric-btn danger radius">Danger</a>
+      <a href="#" class="genric-btn link radius">Link</a>
+      <a href="#" class="genric-btn disable radius">Disable</a>
+      </div>
+      <div class="button-group-area mt-10">
+      <a href="#" class="genric-btn default-border radius">Default</a>
+      <a href="#" class="genric-btn primary-border radius">Primary</a>
+      <a href="#" class="genric-btn success-border radius">Success</a>
+      <a href="#" class="genric-btn info-border radius">Info</a>
+      <a href="#" class="genric-btn warning-border radius">Warning</a>
+      <a href="#" class="genric-btn danger-border radius">Danger</a>
+      <a href="#" class="genric-btn link-border radius">Link</a>
+      <a href="#" class="genric-btn disable radius">Disable</a>
+      </div>
+      <div class="button-group-area mt-40">
+      <a href="#" class="genric-btn default circle">Default</a>
+      <a href="#" class="genric-btn primary circle">Primary</a>
+      <a href="#" class="genric-btn success circle">Success</a>
+      <a href="#" class="genric-btn info circle">Info</a>
+      <a href="#" class="genric-btn warning circle">Warning</a>
+      <a href="#" class="genric-btn danger circle">Danger</a>
+      <a href="#" class="genric-btn link circle">Link</a>
+      <a href="#" class="genric-btn disable circle">Disable</a>
+      </div>
+      <div class="button-group-area mt-10">
+      <a href="#" class="genric-btn default-border circle">Default</a>
+      <a href="#" class="genric-btn primary-border circle">Primary</a>
+      <a href="#" class="genric-btn success-border circle">Success</a>
+      <a href="#" class="genric-btn info-border circle">Info</a>
+      <a href="#" class="genric-btn warning-border circle">Warning</a>
+      <a href="#" class="genric-btn danger-border circle">Danger</a>
+      <a href="#" class="genric-btn link-border circle">Link</a>
+      <a href="#" class="genric-btn disable circle">Disable</a>
+      </div>
+      <div class="button-group-area mt-40">
+      <a href="#" class="genric-btn default circle arrow">Default
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn primary circle arrow">Primary
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn success circle arrow">Success
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn info circle arrow">Info
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn warning circle arrow">Warning
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn danger circle arrow">Danger
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      </div>
+
+      <div class="button-group-area mt-10">
+      <a href="#" class="genric-btn default-border circle arrow">Default
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn primary-border circle arrow">Primary
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn success-border circle arrow">Success
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn info-border circle arrow">Info
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn warning-border circle arrow">Warning
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      <a href="#" class="genric-btn danger-border circle arrow">Danger
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+              <path d="M18.375 12H4.687"></path>
+            </svg>
+      </a>
+      </div>
+
+      <div class="button-group-area mt-40">
+      <a href="#" class="genric-btn primary e-large">Extra Large</a>
+      <a href="#" class="genric-btn success large">Large</a>
+      <a href="#" class="genric-btn primary">Default</a>
+      <a href="#" class="genric-btn success medium">Medium</a>
+      <a href="#" class="genric-btn primary small">Small</a>
+      </div>
+      <div class="button-group-area mt-10">
+      <a href="#" class="genric-btn primary-border e-large">Extra Large</a>
+      <a href="#" class="genric-btn success-border large">Large</a>
+      <a href="#" class="genric-btn primary-border">Default</a>
+      <a href="#" class="genric-btn success-border medium">Medium</a>
+      <a href="#" class="genric-btn primary-border small">Small</a>
+      <div class="samplebuttonbottomgap"></div>
+      <!-- <hr id="hr3" /> -->
+      </div>
+      
+      </div>
+     
+     
+    </section>
+
+
+    <section>
+      <div class="whole-wrap">
+          <!-- <div class="allignmentparatopgap"></div> -->
+          <div class="container">
+          <div class="section-top-border">
+          <h3 class="mb-30 title_color">Left Aligned</h3>
+          <div class="allignmentheadinggap"></div>
+          <div class="row">
+          <div class="col-md-3">
+          <img src="childinwild.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-md-9 mt-sm-20 left-align-p">
+          <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer
+          money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks
+          such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being
+          chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new
+          online casinos started taking root. These began to operate under a different business umbrella, and by doing that,
+          rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems
+          that would accept this new clarification and start doing business with me. Listed in this article are the electronic
+          banking systems that accept players from the United States that wish to play in online casinos.</p>
+          </div>
+          </div>
+          </div>
+          <!-- <div class="textalignmentrightgap"></div> -->
+          <!-- <hr id="hr3" /> -->
+          
+          <div class="section-top-border text-right">
+              <!-- <div class="allignmentparatopgap"></div> -->
+          <h3 class="mb-30 title_color">Right Aligned</h3>
+          <div class="allignmentheadinggap"></div>
+          <div class="row">
+          <div class="col-md-9">
+          <p class="text-right">Over time, even the most sophisticated, memory packed computer can begin to run slow if we don’t do something to prevent
+          it. The reason why has less to do with how computers are made and how they age and more to do with the way we use
+          them. You see, all of the daily tasks that we do on our PC from running programs to downloading and deleting software
+          can make our computer sluggish. To keep this from happening, you need to understand the reasons why your PC is getting
+          slower and do something to keep your PC running at its best. You can do this through regular maintenance and PC performance
+          optimization programs</p>
+          <p class="text-right">Before we discuss all of the things that could be affecting your PC’s performance, let’s talk a little about what symptoms</p>
+          </div>
+          <div class="col-md-3">
+          <img src="childinwild.jpg" alt="" class="img-fluid">
+          </div>
+          </div>
+          </div>
+          <!-- <div class="textalignmentrightgap"></div> -->
+          <!-- <hr id="hrline1" /> -->
+  
+          <div class="section-top-border">
+              <!-- <div class="definitiontopgap"></div> -->
+              <h3 class="mb-30 title_color">Definition</h3>
+              <div class="definitionbottomgap"></div>
+              <div class="row">
+              <div class="col-md-4">
+              <div class="single-defination">
+              <h4 class="mb-20">Definition 01</h4>
+              <div class="definitionsubgap"></div>
+              <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer
+              money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+              </div>
+              </div>
+              <div class="col-md-4">
+              <div class="single-defination">
+              <h4 class="mb-20">Definition 02</h4>
+              <div class="definitionsubgap"></div>
+              <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer
+              money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+              </div>
+              </div>
+              <div class="col-md-4">
+              <div class="single-defination">
+              <h4 class="mb-20">Definition 03</h4>
+              <div class="definitionsubgap"></div>
+              <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer
+              money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks</p>
+              </div>
+              </div>
+              </div>
+              </div>
+              <!-- <div class="definitionbottomparagap"></div> -->
+              <!-- <hr id="hrline1" /> -->
+  
+              <div class="section-top-border">
+              <!-- <div class="blockquotestopgap"></div> -->
+              <h3 class="mb-30 title_color">Block Quotes</h3>
+              <div class="blockquotebottomgap"></div>
+              <div class="row">
+              <div class="col-lg-12">
+              <blockquote class="generic-blockquote">
+              “Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money
+              to them through any US bank or payment system. As a result of this law, most of the popular online casino networks
+              such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being
+              chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new
+               online casinos started taking root. These began to operate under a different business umbrella, and by doing that,
+              rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems
+              that would accept this new clarification and start doing business with me. Listed in this article are the electronic
+              banking”
+              </blockquote>
+              </div>
+              </div>
+              </div>
+              <!-- <div class="blockquotesparabottomgap"></div> -->
+              <!-- <hr id="hrline1" /> -->
+  
+  
+              <div class="section-top-border ">
+                  <h3 class="mb-30 title_color">Table</h3>
+                  <div class="progress-table-wrap">
+                      <div class="progress-table">
+                          <div class="table-head">
+                              <div class="serial">#</div>
+                              <div class="country">Countries</div>
+                              <div class="visit">Visits</div>
+                              <div class="percentage">Percentages</div>
+                          </div>
+                          <div class="table1topgap"></div>
+                          <div class="table-row">
+                              <div class="serial">01</div>
+                              <div class="country">
+                                  <img src="./flag/flag1.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">645032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                                          aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">02</div>
+                              <div class="country">
+                                  <img src="./flag/flag2.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">345032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                      <div class="progress-bar color-2" role="progressbar" style="width: 30%" aria-valuenow="30"
+                                          aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">03</div>
+                              <div class="country">
+                                  <img src="./flag/flag3.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">445032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-3" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">04</div>
+                              <div class="country">
+                                  <img src="./flag/flag4.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">495032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-4" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">05</div>
+                              <div class="country">
+                                  <img src="./flag/flag5.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">345032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-5" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">06</div>
+                              <div class="country">
+                                  <img src="./flag/flag6.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">505032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">07</div>
+                              <div class="country">
+                                  <img src="./flag/flag7.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">385032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-7" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <div class="table-row">
+                              <div class="serial">08</div>
+                              <div class="country">
+                                  <img src="./flag/flag8.jpg" alt="flag"> Canada
+                              </div>
+                              <div class="visit">495032</div>
+                              <div class="percentage">
+                                  <div class="progress">
+                                    <div class="progress-bar color-8" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <hr id="hrline1" />
+                          <!-- <div class="tableendgap"></div> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="section-top-border">
+                <h3 class="title_color">Image Gallery</h3>
+                <div class="row gallery-item">
+                    <div class="col-md-4">
+                        <a href="girl1.jpg" class="img-gal">
+                            <div class="single-gallery-image" style="background: url(girl1.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="girl2.jpg" class="img-gal">
+                            <div class="single-gallery-image" style="background: url(girl2.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="girl3.jpg" class="img-gal">
+                            <div class="single-gallery-image" style="background: url(girl3.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="girl4.jpg" class="img-gal">
+                            <div class="single-gallery-image" style="background: url(girl4.jpg);"></div>
+                        </a>
+                    </div>
+                        <div class="col-md-6">
+                        <a href="girl.5jpg" class="img-gal">
+                        <div class="single-gallery-image" style="background: url(girl5.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="girl.6jpg" class="img-gal">
+                        <div class="single-gallery-image" style="background: url(girl6.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="girl.7" class="img-gal">
+                        <div class="single-gallery-image" style="background: url(girl7.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" class="img-gal">
+                        <div class="single-gallery-image" style="background: url(girl8.jpg);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-top-border">
+              <div class="row">
+              <div class="col-lg-4 col-sm-6 typo-sec">
+              <h3 class="mb-20 title_color">Typography</h3>
+              <div class="typography">
+              <h1 class="typo-list">This is header 01</h1>
+              <h2 class="typo-list">This is header 02</h2>
+              <h3 class="typo-list">This is header 03</h3>
+              <h4 class="typo-list">This is header 04</h4>
+              <h5 class="typo-list">This is header 05</h5>
+              <h6 class="typo-list">This is header 06</h6>
+              </div>
+              </div>
+      
+              <div class="col-lg-4 col-sm-6 mt-sm-30 typo-sec">
+              <h3 class="mb-20 title_color">Unordered List</h3>
+              <div class="">
+              <ul class="unordered-list">
+              <li>Fta Keys</li>
+              <li>For Women Only Your Computer Usage</li>
+              <li>Facts Why Inkjet Printing Is Very Appealing
+              <ul>
+              <li>Addiction When Gambling Becomes
+              <ul>
+              <li>Protective Preventative Maintenance</li>
+              </ul>
+              </li>
+              </ul>
+              </li>
+              <li>Dealing With Technical Support 10 Useful Tips</li>
+              <li>Make Myspace Your Best Designed Space</li>
+              <li>Cleaning And Organizing Your Computer</li>
+              </ul>
+              </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mt-sm-30 typo-sec">
+      
+              <h3 class="mb-20 title_color">Ordered List</h3>
+              <div class="">
+              <ol class="ordered-list">
+              <li>
+              <span>Fta Keys</span>
+              </li>
+              <li>
+              <span>For Women Only Your Computer Usage</span>
+              </li>
+              <li>
+              <span>Facts Why Inkjet Printing Is Very Appealing</span>
+              <ol class="ordered-list-alpha">
+              <li>
+              <span>Addiction When Gambling Becomes</span>
+              <ol class="ordered-list-roman">
+              <li>
+              <span>Protective Preventative Maintenance</span>
+              </li>
+              </ol>
+              </li>
+              </ol>
+              </li>
+              <li>
+              <span>Dealing With Technical Support 10 Useful Tips</span>
+              </li>
+              <li>
+              <span>Make Myspace Your Best Designed Space</span>
+              </li>
+              <li>
+              <span>Cleaning And Organizing Your Computer</span>
+              </li>
+              </ol>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="section-top-border">
+                <div class="row">
+                <div class="col-lg-8 col-md-8">
+                <h3 class="mb-30 title_color">Form Element</h3>
+                <form action="#">
+                <div class="mt-10">
+                <input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required="" class="single-input" fdprocessedid="iqqmmj">
+                </div>
+                <div class="mt-10">
+                <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required="" class="single-input" fdprocessedid="f83pfb">
+                </div>
+                <div class="mt-10">
+                <input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'" required="" class="single-input" fdprocessedid="db0uwk">
+                </div>
+                <div class="mt-10">
+                <input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" class="single-input" fdprocessedid="k9zmwl">
+                </div>
+                <div class="input-group-icon mt-10">
+                <div class="icon myicon">
+        
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.615 2.576A.6.6 0 0 1 8.04 2.4h8.4a.6.6 0 0 1 .6.6c0 .816-.41 1.41-.775 1.775-.151.15-.3.269-.425.358v5.317l.094.058a7 7 0 0 1 .901.666c.637.556 1.405 1.459 1.405 2.626a.6.6 0 0 1-.6.6h-4.8v5.4c0 .332-.269 1.8-.6 1.8-.331 0-.6-1.468-.6-1.8v-5.4h-4.8a.6.6 0 0 1-.6-.6c0-1.167.768-2.07 1.404-2.626.31-.27.644-.512.996-.724V5.133a3.324 3.324 0 0 1-.425-.358C7.851 4.41 7.44 3.815 7.44 3a.6.6 0 0 1 .175-.424Z"></path>
+                  </svg>
+                </div>
+                <input type="text" name="address" placeholder="Address"
+                 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'" 
+                 required="" class="single-input paddingform" fdprocessedid="w1jm1">
+                </div>
+                <div class="input-group-icon mt-10">
+                <div class="icon myicon">
+        
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.414 13.78 2 15.194l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536 3.313-3.313 3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828L13.947 7.49 3.824 6.3 2.559 7.564l7.644 3.67-3.253 3.253-3.536-.708Z"></path>
+                  </svg>
+        
+                </div>
+        
+                <div class="form-select paddingform" id="default-select">
+                <select class="nice-select">
+                <option value="1">City</option>
+                <option value="2">Dhaka</option>
+                <option value="3">Dilli</option>
+                <option value="4">Newyork</option>
+                <option value="5">Islamabad</option>
+                </select><div  style="display: none;" tabindex="0">
+                    <span class="current">City</span><ul class="list">
+                        <li data-value="1" class="option selected">City</li>
+                        <li data-value="1" class="option">Dhaka</li><li data-value="1" class="option">Dilli</li>
+                        <li data-value="1" class="option">Newyork</li><li data-value="1" class="option">Islamabad</li>
+                    </ul></div>
+                </div>
+                </div>
+                <div class="input-group-icon mt-10">
+                <div class="icon myicon">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm0 1.5c.254 0 .502.016.75.038V4.5h1.5v-.43a8.273 8.273 0 0 1 4.5 3.201V9.75l.75 1.5V12h.75c0 .274-.015.547-.041.815-.007.072-.022.14-.03.212a8.114 8.114 0 0 1-.09.586c-.014.072-.033.142-.05.214-.043.19-.09.38-.146.565-.02.064-.042.126-.063.19-.063.19-.13.378-.207.563l-.07.16a8.06 8.06 0 0 1-.27.562 8.24 8.24 0 0 1-.88 1.324c-.023.029-.044.056-.068.084a8.32 8.32 0 0 1-.458.504l-.069.072a8.245 8.245 0 0 1-.508.463c-.025.02-.047.042-.072.063a8.99 8.99 0 0 1-.546.407c-.03.02-.056.043-.085.063-.18.12-.367.23-.556.337a8.195 8.195 0 0 1-2.903.977l3.009-2.268.825-.825L18 15v-.75l-1.5-.75h-.75l-1.5-1.5h-1.5l-.75.75v.75l-.75.75v1.5l1.5 1.2-1.482 3.263C7.06 19.84 3.75 16.301 3.75 12a8.239 8.239 0 0 1 3-6.359V6L6 6.75V8.4l.75 2.85 3.75 1.5h.75V12L9 11.25v-1.5h2.25L12 7.875l1.5-1.125V6l-2.25-1.5-1.078-.54A8.249 8.249 0 0 1 12 3.75Zm-.75 6.75v.75h1.5v-.75h-1.5Z"></path>
+                  </svg>
+                </div>
+                <div class="form-select paddingform" id="default-select2">
+                  
+                <select class="nice-select" >
+                <option value="1">Country</option>
+                <option value="1">Bangladesh</option>
+                <option value="1">India</option>
+                <option value="1">England</option>
+                <option value="1">Srilanka</option>
+                </select><div  style="display: none;" tabindex="0"><span class="current">
+                    Country</span><ul class="list"><li data-value="1" class="option selected">
+                        Country</li><li data-value="1" class="option">Bangladesh</li>
+                        <li data-value="1" class="option">India</li><li data-value="1" class="option">
+                            England</li><li data-value="1" class="option">Srilanka</li></ul></div>
+                </div>
+                </div>
+                <div class="mt-10">
+                <textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
+                </div>
+                <div class="mt-10">
+                <input type="text" name="first_name" placeholder="Primary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Primary color'" required="" class="single-input-primary" fdprocessedid="1t1n7c">
+                </div>
+                <div class="mt-10">
+                <input type="text" name="first_name" placeholder="Accent color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Accent color'" required="" class="single-input-accent" fdprocessedid="pamvju">
+                </div>
+                <div class="mt-10">
+                <input type="text" name="first_name" placeholder="Secondary color" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary color'" required="" class="single-input-secondary" fdprocessedid="yo9q3i">
+                </div>
+                </form>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-sm-30 element-wrap">
+                <div class="single-element-widget">
+                <h3 class="mb-30 title_color">Switches</h3>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>01. Sample Switch</p>
+                <div class="primary-switch">
+                <input type="checkbox" id="default-switch">
+                <label for="default-switch"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>02. Primary Color Switch</p>
+                <div class="primary-switch">
+                <input type="checkbox" id="primary-switch" checked="">
+                <label for="primary-switch"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>03. Confirm Color Switch</p>
+                <div class="confirm-switch">
+                <input type="checkbox" id="confirm-switch" checked="">
+                <label for="confirm-switch"></label>
+                </div>
+                </div>
+                </div>
+                <div class="single-element-widget">
+                <h3 class="mb-30 title_color">Selectboxes</h3>
+                
+            <div class="dropdown">
+              <button class="dropbtn">English</button>
+              <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Spanish</a>
+                <a href="#">Arabic</a>
+                <a href="#">Portuguese</a>
+                <a href="#">Bengali</a>
+              </div>
+            </div>
+                <div class="single-element-widget">
+                <h3 class="mb-30 title_color">Checkboxes</h3>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>01. Sample Checkbox</p>
+                <div class="primary-checkbox">
+                <input type="checkbox" id="default-checkbox">
+                <label for="default-checkbox"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>02. Primary Color Checkbox</p>
+                <div class="primary-checkbox">
+                <input type="checkbox" id="primary-checkbox" checked="">
+                <label for="primary-checkbox"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>03. Confirm Color Checkbox</p>
+                <div class="confirm-checkbox">
+                <input type="checkbox" id="confirm-checkbox">
+                <label for="confirm-checkbox"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>04. Disabled Checkbox</p>
+                <div class="disabled-checkbox">
+                <input type="checkbox" id="disabled-checkbox" disabled="">
+                <label for="disabled-checkbox"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>05. Disabled Checkbox active</p>
+                <div class="disabled-checkbox">
+                <input type="checkbox" id="disabled-checkbox-active" checked="" disabled="">
+                <label for="disabled-checkbox-active"></label>
+                </div>
+                </div>
+                </div>
+                <div class="single-element-widget">
+                <h3 class="mb-30 title_color">Radios</h3>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>01. Sample radio</p>
+                <div class="primary-radio">
+                <input type="checkbox" id="default-radio">
+                <label for="default-radio"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>02. Primary Color radio</p>
+                <div class="primary-radio">
+                <input type="checkbox" id="primary-radio" checked="">
+                <label for="primary-radio"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>03. Confirm Color radio</p>
+                <div class="confirm-radio">
+                <input type="checkbox" id="confirm-radio" checked="">
+                <label for="confirm-radio"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>04. Disabled radio</p>
+                <div class="disabled-radio">
+                <input type="checkbox" id="disabled-radio" disabled="">
+                <label for="disabled-radio"></label>
+                </div>
+                </div>
+                <div class="switch-wrap d-flex justify-content-between">
+                <p>05. Disabled radio active</p>
+                <div class="disabled-radio">
+                <input type="checkbox" id="disabled-radio-active" checked="" disabled="">
+                <label for="disabled-radio-active"></label>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+        
+  
+  
+    </section>
+
+    <section class="footer">
+  
+        <footer class="footer-area section_gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-6">
+                <div class="single-footer-widget">
+                  <h6>Top Products</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Managed Website</a></li>
+                    <li><a href="#">Manage Reputation</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                    <li><a href="#">Marketing Service</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                  <h6 class="mb-20">Contact Us</h6>
+                  <p>
+                    56/8, Santa bullevard, Rocky beach, San fransisco, Los angeles, USA
+                  </p>
+                  <h3>012-6532-568-9746</h3>
+                  <h3>012-6532-568-97468</h3>
+      
+                </div>
+                <div class="footermidgap"></div>
+              </div>
+      
+              <div class="col-lg-6 col-md-12">
+                <div class="single-footer-widget">
+                  <h6>Newsletter</h6>
+                  <p>You can trust us. we only send promo offers, not a single spam.</p>
+                  <form>
+                    <div class="form-group row align-items-center">
+                      <div class="col-lg-7 col-md-6 col-sm-12 inputproblem">
+      
+                        <input name="EMAIL" placeholder="Your Email Address" required="" type="email" class="form-control forming" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                      </div>
+                      <div class="col-lg-5 col-md-12">
+                        <button class="btn btn-primary footerbutton">Get Started <span ><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg></span></button>
+                      </div>
+                    </div>
+                    <div class="info"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row footer-bottom d-flex justify-content-between">
+              <p class="col-lg-8 col-sm-12 footer-text m-0 footera">
+                &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with<a href="#">
+                  <svg  style="color:#61aaf8;" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.544 3.75c-3.043 0-4.543 3-4.543 3s-1.5-3-4.544-3C4.984 3.75 3.026 5.82 3 8.288c-.051 5.125 4.066 8.77 8.579 11.832a.75.75 0 0 0 .843 0c4.512-3.063 8.63-6.707 8.578-11.832-.025-2.469-1.983-4.538-4.456-4.538Z"></path>
+                  </svg>
+                </a> by <a style="color:#61aaf8;" href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+      
+              <div class="col-lg-4 col-sm-12 footer-social footericoncontent" >
+      
+                <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+                </svg></a>
+                <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+                </svg></a>
+                <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1.5C6.203 1.5 1.5 6.203 1.5 12S6.203 22.5 12 22.5 22.5 17.802 22.5 12 17.797 1.5 12 1.5Zm6.667 4.84a8.736 8.736 0 0 1 2.062 5.08c-1.892-.098-4.156-.098-5.972.071-.23-.58-.465-1.148-.722-1.695 2.094-.908 3.707-2.1 4.632-3.456ZM12 3.25a8.71 8.71 0 0 1 5.584 2.013c-.952 1.202-2.445 2.25-4.304 3.04-1.018-1.881-2.188-3.5-3.436-4.774A8.79 8.79 0 0 1 12 3.249Zm-3.96.957c1.264 1.258 2.45 2.86 3.49 4.734-1.975.604-4.239.95-6.655.95a21.6 21.6 0 0 1-1.35-.044 8.755 8.755 0 0 1 4.515-5.64Zm-4.774 7.377c.498.022 1.001.033 1.51.028 2.756-.033 5.32-.465 7.525-1.172.208.432.405.875.59 1.329a5.41 5.41 0 0 0-.782.234c-3.013 1.266-5.386 3.305-6.671 5.772A8.719 8.719 0 0 1 3.25 12c0-.14.005-.279.016-.416ZM12 20.75a8.699 8.699 0 0 1-5.365-1.843c1.165-2.308 3.243-4.219 5.863-5.403.246-.115.574-.208.951-.29.313.864.592 1.76.837 2.69a31.79 31.79 0 0 1 .808 4.272A8.678 8.678 0 0 1 12 20.75Zm4.73-1.394a30.34 30.34 0 0 0-1.444-6.388c1.718-.14 3.774-.12 5.41 0a8.741 8.741 0 0 1-3.965 6.388Z"></path>
+                </svg></a>
+                <a href="#"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+                  <path d="M3 12h4.5"></path>
+                  <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+                  <path d="M16 6h3"></path>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      
+    </section>
+</body>
+</html>

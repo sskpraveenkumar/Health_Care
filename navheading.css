@@ -1,0 +1,75 @@
+::-webkit-scrollbar{
+  display:none;
+}
+::-webkit-scrollbar-thumb{
+  background-color: white;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+  }
+  .grid_firstcontent svg{
+        color:gray;
+    }
+    .grid_firstcontent svg:hover{
+      color: #61aaf8;
+    }
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    .grid_firstcontent{
+        width:300px;
+        /*border:2px solid red;*/
+        display:flex;
+        justify-content: flex-end;
+        padding-bottom:10px;
+    }
+    .priya{
+        display: flex;
+        width:170px;
+        justify-content: space-around;
+        align-items: center;
+        font-size:14px;
+        padding-bottom: 15px;
+        /*border:2px solid red;*/
+    }
+    .priya1{
+        display: flex;
+        width:250px;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size:14px;
+        padding-bottom: 15px;
+        /*border:2px solid red;*/
+    }
+    .grid_secondcontent{
+        width:550px;
+        /*border:2px solid red;*/
+    }
+    .navbar-light .navbar-nav .nav-link:hover{
+      color:#70b0f4;
+      background-color: #F8F8F8;
+    }
+    .priya svg{
+      color:#70b0f4;
+      cursor: pointer;
+    }
+    .priya1 svg{
+      color:#70b0f4;
+      cursor: pointer;
+    }
+    .grid{
+      border-bottom:0.5px solid rgb(231, 220, 220);
+      height:45px;
+      overflow: hidden;
+  }
+  .iconpadding{
+    padding-bottom: 10px;
+  }
+  .praveenHeading{
+    width:30px;
+  }

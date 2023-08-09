@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../Java Script"
+		},
+		{
+			"path": "../../html practice/html self learning"
+		},
+		{
+			"path": "../../html practice"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "BootStrap5"
+	}
+}
