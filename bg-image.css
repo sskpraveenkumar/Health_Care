@@ -1,0 +1,70 @@
+.bg-image {
+    background-image: url('homecontent.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  #bg-container{   /*the total container*/
+      overflow: hidden;
+      height:110vh;
+
+  }
+  .bgcontent{
+      /*border:2px solid red;*/
+      height:auto;
+  }
+  .bgimagedummy{
+      width:160px;
+  }
+  .praveen h1{
+      font-size: 48px;
+      color: white;
+      height:auto;
+      /*border:2px solid blue;*/
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+  }
+  .praveen p{
+      height:auto;
+      /*border:2px solid red;*/
+      font-size: 15px;
+      color:white;
+      font-family: "Roboto", sans-serif;
+      width:85%;
+  }
+  .bgimagegap{
+      height:20px;
+  }
+  .hover-btn {
+      position: relative;
+      display: inline-block;
+      background: #3face4;
+      padding: 0px 35px;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 48px;
+      border: 1px solid #3face4;
+      outline: none ;
+      box-shadow: none;
+      text-align: center;
+      cursor: pointer;
+      transition: all 300ms linear 0s;
+      border-radius: 5px;
+      text-transform: capitalize;
+  }
+  .hover-btn:hover {
+      color:#3face4;
+      background-color: #fff;
+  }
+  .praveen{
+    margin:2px;
+    padding:2px;
+  }
+
+  @media all and (max-width: 205px){
+
+  }

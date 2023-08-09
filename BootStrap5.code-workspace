@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../html practice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BootStrap5"
+	}
+}

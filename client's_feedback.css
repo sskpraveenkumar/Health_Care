@@ -1,0 +1,145 @@
+.clients_feedback {
+    overflow: hidden;
+    background: #f9f9ff;
+}
+
+.feedbackprocedure p {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+}
+
+.feedbackprocedure h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+.clientfeedbackgap {
+    height: 20px;
+}
+
+.feedbackfrontgap {
+    height: 120px;
+}
+
+.clientfeedbackendgap {
+    height: 80px;
+}
+
+.customername{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.customerreview{
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+}
+
+
+
+
+
+
+
+
+.clients_feedback {
+    overflow: hidden;
+    background: #f9f9ff;
+}
+
+.feedbackprocedure p {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+}
+
+.feedbackprocedure h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+
+.clientfeedbackgap {
+    height: 20px;
+}
+
+.feedbackfrontgap {
+    height: 120px;
+}
+
+.clientfeedbackendgap {
+    height: 80px;
+}
+
+.single-feedback-carusel {
+    margin-bottom: 30px;
+}
+
+.single-feedback-carusel h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.star {
+    margin-left: 10px;
+    /*margin-top: 5px;*/
+    color: #ff9800;
+}
+
+.checked {
+    color: #ff9800;
+}
+
+.feedbackimage {
+    transform: translateX(-30px);
+}
+
+.feedbackdummy {
+    height: 70px;
+}
+
+/* Crossfade effect */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .feedbackimage {
+        transform: translateX(0px);
+    }
+}
+.feedbackendgap{
+    height:100px;
+}

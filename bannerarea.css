@@ -1,0 +1,30 @@
+/*consultant css*/
+.banner_area {
+    position: relative;
+    z-index: 1;
+    /*min-height: 470px;*/
+}
+.banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 350px;
+    background: url("./department/banner-bg.jpg") no-repeat center bottom;
+    background-size: auto;
+    z-index: 1;
+}
+.departmenth2 h2{
+    font-size:48px;
+    color:white;
+    font-weight:bolder;
+    font-family: "Roboto", sans-serif;
+}
+.departmentinterior a{
+    color:white;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+.departmentinterior a:hover{
+    color:#70b0f4;
+   
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+</head>
+<body>
+    <style>
+        .clients_feedback {
+            overflow: hidden;
+            background: #f9f9ff;
+        }
+
+        .feedbackprocedure p {
+            line-height: 24px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #777777;
+        }
+
+        .feedbackprocedure h1 {
+            font-size: 36px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .clientfeedbackgap {
+            height: 20px;
+        }
+
+        .feedbackfrontgap {
+            height: 120px;
+        }
+
+        .clientfeedbackendgap {
+            height: 80px;
+        }
+
+        .single-feedback-carusel {
+            margin-bottom: 30px;
+        }
+
+        .single-feedback-carusel h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .star {
+            margin-left: 10px;
+            margin-top: 5px;
+            color: #ff9800;
+        }
+
+        .checked {
+            color: #ff9800;
+        }
+
+        .feedbackimage {
+            transform: translateX(-30px);
+        }
+
+        .feedbackdummy {
+            height: 70px;
+        }
+
+        /* Crossfade effect */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .fade-out {
+            animation: fadeOut 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @media all and (min-width: 600px) {
+            .feedbackimage {
+                transform: translateX(0px);
+            }
+        }
+        
+    </style>
+   
+
+<section class="clients_feedbackreview">
+    <div class="container">
+        <div id="feedbackCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#feedbackCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#feedbackCarousel" data-slide-to="1"></li>
+                <li data-target="#feedbackCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6 feedbackimage">
+                            <img src="feedback-bg.jpg" alt="" class="feedback-image" style="max-width: 100%;">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feedbackdummy"></div>
+                            <div class="single-feedback-carusel fade-in">
+                                <div class="d-flex flex-row">
+                                    <h4 class="customername">Fannie Rowe</h4>
+                                    <div class="star">
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="customerreview">Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can
+                                    find the best computer accessory for your laptop, monitor, printer, scanner, speaker.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 feedbackimage">
+                            <img src="mylife1.jpg" alt="" class="feedback-image" style="max-width: 100%;" >
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feedbackdummy"></div>
+                            <div class="single-feedback-carusel fade-in">
+                                <div class="d-flex flex-row">
+                                    <h4 class="customername">Praveen Kumar</h4>
+                                    <div class="star">
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22.5 9.75h-8.063L12 2.25l-2.438 7.5H1.5l6.563 4.5-2.532 7.5L12 17.062l6.469 4.688-2.532-7.5 6.563-4.5Z"></path>
+                                          </svg>
+                                    </div>
+                                </div>
+                                <p class="customerreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6 feedbackimage">
+                            <img src="mylife3.jpg" alt="" class="feedback-image" style="max-width: 100%;" height="355px" width="555px">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="feedbackdummy"></div>
+                            <div class="single-feedback-carusel fade-in">
+                                <div class="d-flex flex-row">
+                                    <h4 class="customername">Jane Smith</h4>
+                                    <div class="star">
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+
+                                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.25 9.53h-8.608L12 1.5 9.358 9.53H.75l7.041 4.94L5.05 22.5 12 17.524l6.951 4.976-2.747-8.03 7.046-4.94Z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="customerreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Increase carousel speed
+        $('.carousel').carousel({
+            interval: 2000
+        });
+
+        // Change carousel indicators color
+        $('.carousel-indicators li').css('background-color', '#000');
+    });
+</script>
+
+</body>
+</html>

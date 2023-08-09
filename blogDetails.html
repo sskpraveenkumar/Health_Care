@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="navheading.css">
+    <link rel="stylesheet" href="myprojectNav.css">
+    <link rel="stylesheet" href="bannerarea.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+        .blog_area {
+            background: #f9f9ff;
+        }
+        .p_120 {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        article, aside, footer, header, main, nav, section {
+            display: block;
+        }
+        .blog_info {
+            padding-top: 30px;
+        }
+        .text-right {
+            text-align: right !important;
+        }
+        .blog_info .post_tag {
+            padding-bottom: 20px;
+        }
+        .blog_info .post_tag a {
+            font: 300 14px/21px "Roboto", sans-serif;
+            color: #000000;
+        }
+        .blog_info .post_tag a.active {
+            color: #3face4;
+        }
+        .blog_info .post_tag a {
+            font: 300 14px/21px "Roboto", sans-serif;
+            color: #000000;
+        }
+        .blog_info .blog_meta li a {
+            font: 300 14px/20px "Roboto", sans-serif;
+            color: #777777;
+            vertical-align: middle;
+            /*padding-bottom: 12px;*/
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        .list {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        .blog_info .blog_meta li a i {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 600;
+            padding-left: 15px;
+            line-height: 20px;
+            vertical-align: middle;
+        }
+        .blog_info .blog_meta li a {
+            font: 300 14px/20px "Roboto", sans-serif;
+            color: #777777;
+            vertical-align: middle;
+            /*padding-bottom: 12px;*/
+            display: inline-block;
+        }
+        .blog_info .blog_meta li a svg{
+            color: #000000;
+            font-size: 14px;
+            font-weight: 600;
+            padding-left: 15px;
+            line-height: 20px;
+            vertical-align: middle;
+        }
+        .blog_info .blog_meta li a:hover{
+            text-decoration: none;
+            color:#3face4;
+
+        }
+        .single-post-area .social-links {
+            padding-top: 10px;
+        }
+        ol, ul {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .single-post-area .social-links li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .single-post-area .social-links li a {
+            color: #cccccc;
+            padding: 4px;
+            font-size: 14px;
+            transition: all 0.2s linear;
+        }
+        .single-post-area .social-links li a:hover{
+            color:#3face4;
+        }
+        
+        div.post_tag{
+            width:110%;
+        }
+        @media all and (max-width:630px){
+            div.post_tag{
+                width:100%;
+            }
+        }
+        single-post-area .blog_details {
+            padding-top: 26px;
+        }
+        .blog_details h2 {
+            font-size: 24px;
+            line-height: 36px;
+            color: #000000;
+            font-weight: 600;
+            transition: all 0.3s linear;
+        }
+        .blog_details h2:hover{
+            color:#3face4;
+            cursor: pointer;
+        }
+        .single-post-area .blog_details p {
+            margin-bottom: 10px;
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #777777;
+        }
+        .blog_info {
+            padding-top: 30px;
+        }
+        .single-post-area .blog_details {
+            padding-top: 26px;
+        }
+
+
+        /*next div css*/
+        .single-post-area .quotes {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 24px 35px 24px 30px;
+            background-color: white;
+            box-shadow: -20.84px 21.58px 30px 0px rgba(176, 176, 176, 0.1);
+            font-size: 14px;
+            line-height: 24px;
+            color: #777;
+            font-style: italic;
+        }
+        .blogdetailpara p{
+            line-height: 24px;
+            font-size: 14px;
+            font-family: "Roboto", sans-serif;
+            font-weight: normal;
+            color: #777777;
+        }
+        .mt-25 {
+            margin-top: 25px;
+        }
+          
+        
+        
+        /*next css*/
+      .single-post-area .navigation-area {
+        border-top: 1px solid #eee;
+        padding-top: 30px;
+        margin-top: 60px;
+    }
+    .single-post-area .navigation-area .nav-left {
+        text-align: left;
+    }
+    .align-items-center {
+        -ms-flex-align: center !important;
+        align-items: center !important;
+    }
+    .justify-content-start {
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+    .flex-row {
+        -ms-flex-direction: row !important;
+        flex-direction: row !important;
+    }
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+    .single-post-area .navigation-area .nav-left .thumb img {
+        transition: all 300ms linear 0s;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+
+   /* Added styles for hover effect */
+   .thumb .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 300ms linear;
+}
+
+.navleftpraveen:hover .thumb .arrow,
+.navpraveen:hover .thumb .arrow {
+    opacity: 1;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumb:hover img {
+    filter: brightness(60%);
+}
+
+
+
+.thumb:hover .arrow {
+    opacity: 1; /* Show arrow on hover */
+}
+
+.thumb .arrow a svg {
+    fill: blue; /* Set initial arrow color to blue */
+}
+
+.thumb:hover .arrow a svg {
+    fill: white; /* Set arrow color to white on hover */
+   
+}
+.thumb .arrow a svg {
+    fill: white;
+}
+.single-post-area .navigation-area .nav-right {
+    text-align: right;
+}
+.single-post-area .navigation-area h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.single-post-area .navigation-area .nav-left .thumb {
+    margin-right: 20px;
+    background: #000;
+}
+.single-post-area .navigation-area p {
+    margin-bottom: 0px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.single-post-area .navigation-area .nav-right .thumb {
+    margin-left: 20px;
+    background: #000;
+}
+.detials a:hover{
+    text-decoration: none;
+}
+
+/*next div comment css*/
+.comments-area {
+    background: #fafaff;
+    border: 1px solid #eee;
+    padding: 50px 30px;
+    margin-top: 50px;
+}
+.comments-area h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+    font-size: 18px;
+}
+.comments-area .thumb {
+    margin-right: 20px;
+}
+.comments-area a {
+    color: #000000;
+}
+.comments-area h5 {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.comments-area .date {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 13px;
+}
+.comments-area .comment {
+    color: #777777;
+    margin-bottom: 0px;
+}
+.comments-area .comment-list {
+    padding-bottom: 48px;
+}
+.comments-area a:hover {
+    text-decoration: none;
+}
+.comments-area .btn-reply {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #eee;
+    padding: 2px 18px;
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+    transition: all 300ms linear 0s;
+}
+.comments-area .btn-reply:hover{
+    color:white;
+    background-color: #3face4;
+}
+
+
+/*next div css*/
+.comment-form {
+    background: #fafaff;
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 47px 30px 43px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.comment-form h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+.comment-form .form-control {
+    padding: 8px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 14px;
+    color: #777777;
+    border: 1px solid transparent;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+button, input {
+    overflow: visible;
+}
+.comment-form .name {
+    padding-left: 0px;
+}
+.comment-form .email {
+    padding-right: 0px;
+}
+.comment-form textarea.form-control {
+    height: 140px;
+    resize: none;
+}
+.submit_btn {
+    display: inline-block;
+    background: #3face4;
+    padding: 0px 30px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 38px;
+    border: 1px solid #3face4;
+    border-radius: 0px;
+    outline: none !important;
+    box-shadow: none !important;
+    text-align: center;
+    border: 1px solid #3face4;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+}
+.submit_btn:hover{
+    color:#3face4;
+    background-color: #fff;
+    text-decoration: none;
+}
+.form-control:focus{
+    box-shadow: none;
+    border:0.10px solid rgb(207, 201, 201);
+}
+
+
+
+
+/*right side css*/
+
+/*rightside css starts here*/
+.blog_right_sidebar {
+    border: 1px solid #eeeeee;
+    background: #fafaff;
+    padding: 30px;
+}
+
+.input-group > .form-control {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.blog_right_sidebar .search_widget .input-group .btn-default {
+    position: absolute;
+    right: 20px;
+    background: transparent;
+    border: 0px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.blog_right_sidebar .search_widget .input-group .form-control {
+    font-size: 17px;
+    line-height: 29px;
+    border: 0px;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 45px;
+    z-index: 0;
+    background: #3face4;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
+}
+     
+
+/*rightside css*/
+.blog_right_sidebar {
+  border: 1px solid #eeeeee;
+  background: #fafaff;
+  padding: 30px;
+}
+
+.input-group > .form-control {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.blog_right_sidebar .search_widget .input-group .btn-default {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: 0px;
+  box-shadow: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.blog_right_sidebar .search_widget .input-group .form-control {
+  font-size: 17px;
+  line-height: 29px;
+  border: 0px;
+  width: 100%;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+  border-radius: 45px;
+  z-index: 0;
+  background: #3face4;
+}
+
+.form-control::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+
+
+/*rightsidepost css*/
+.blog_right_sidebar .br {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 30px 0px;
+}
+.blog_right_sidebar {
+  border: 1px solid #eeeeee;
+  background: #fafaff;
+  padding: 30px;
+}
+.blog_right_sidebar .author_widget {
+  text-align: center;
+}
+.blog_right_sidebar .author_widget .social_icon {
+  padding: 7px 0px 15px;
+}
+.blog_right_sidebar .author_widget .social_icon a + a {
+  margin-left: 20px;
+}
+
+.blog_right_sidebar .author_widget .social_icon a {
+  font-size: 14px;
+  color: #000000;
+  transition: all 0.2s linear;
+}
+.blog_right_sidebar .author_widget .social_icon a:hover{
+  color:#3face4;
+  text-decoration: none;
+}
+.blog_right_sidebar .author_widget p {
+  margin-bottom: 0px;
+}
+
+aside p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: #777777;
+}
+.blog_right_sidebar .author_widget h4 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.blog_right_sidebar .widget_title {
+  font-size: 18px;
+  line-height: 25px;
+  background: #3face4;
+  text-align: center;
+  color: #fff;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+}
+.blog_right_sidebar .popular_post_widget .post_item .media-body {
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px;
+}
+.blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 4px;
+  transition: all 0.3s linear;
+}
+.blog_right_sidebar .popular_post_widget .post_item .media-body p {
+  font-size: 12px;
+  line-height: 21px;
+  margin-bottom: 0px;
+}
+aside p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.blog_right_sidebar .popular_post_widget .post_item .media-body {
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px;
+}
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+  margin-top: 20px;
+}
+.media-body  a:hover{
+  text-decoration: none;
+
+}
+.blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover{
+  color:#3face4;
+
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.popular_post_widget{
+  overflow: auto;
+}
+
+@media all and (max-width:200px){
+  .author_widget img{
+      width:100%;
+      height:auto;
+
+  }
+ 
+}
+@media all and (max-width:200px){
+  .media-body{
+      display: flex;
+  }
+}
+@media all and (max-width:215px){
+  .popular_post_widget{
+      overflow-x: hidden;
+  }
+ 
+}
+
+
+.blog_right_sidebar .post_category_widget .cat-list li a p {
+  margin-bottom: 0px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li + li {
+  padding-top: 15px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li {
+  border-bottom: 2px dotted #eee;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 12px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
+}
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+  align-content: center;
+  
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*.cat-list li :hover{
+  color:#3FACE4;
+  text-decoration: none;
+}*/
+/*
+.blog_right_sidebar .post_category_widget .cat-list li :hover{
+  color:#3FACE4;
+  text-decoration: none;
+}*/
+.cat-list li :hover{
+  color:#3FACE4;
+  text-decoration: none;
+}
+.post_category_widget .list li:hover,
+      .post_category_widget .list li:hover a {
+          color:#3FACE4;
+          text-decoration: none;
+      }
+
+.post_category_widget .cat-list li:hover:not(:last-child) {
+          border-bottom-color: #3FACE4;
+      }
+
+      .post_category_widget .cat-list li:not(:last-child):hover {
+          border-bottom-color:#3FACE4;
+      }
+      
+      .post_category_widget .cat-list li:not(:last-child):hover a,
+      .post_category_widget .cat-list li:not(:last-child):hover p {
+          color: #3FACE4;
+          text-decoration: none;
+      }
+      .post_category_widget .cat-list li:last-child:hover{
+          border-bottom: 2px dotted #3FACE4; /* Removed border-bottom for the last list item */
+          margin-bottom: 0; /* Removed margin-bottom for the last list item */
+      }
+      
+
+      /*next csss*/
+      .blog_right_sidebar .newsletter_widget {
+          text-align: center;
+      }
+      .blog_right_sidebar .newsletter_widget .input-group-text {
+          background: #fff;
+          border-radius: 0px;
+          vertical-align: top;
+          font-size: 12px;
+          line-height: 36px;
+          padding: 0px 0px 0px 15px;
+          border: 1px solid #eeeeee;
+          border-right: 0px;
+      }
+      .input-group-text {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 0.375rem 0.75rem;
+          margin-bottom: 0;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #495057;
+          text-align: center;
+          white-space: nowrap;
+          background-color: #e9ecef;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+      }
+      .blog_right_sidebar .newsletter_widget .form-control {
+          font-size: 15px;
+          line-height: 24px;
+          color: #cccccc;
+          border: 1px solid #eeeeee;
+          border-left: 0px;
+          border-radius: 0px;
+      }
+      .input-group>.form-control {
+          position: relative;
+          -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+          width: 1%;
+          margin-bottom: 0;
+      }
+      .form-control {
+          display: block;
+          width: 100%;
+          height: calc(2.25rem + 2px);
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      }
+      .blog_right_sidebar .newsletter_widget .bbtns {
+          background: #3face4;
+          color: #fff;
+          font-size: 12px;
+          line-height: 38px;
+          display: inline-block;
+          font-weight: 500;
+          padding: 0px 24px 0px 24px;
+          border-radius: 0;
+      }
+      /* Remove border color while typing */
+  .blog_right_sidebar .newsletter_widget .form-control:focus {
+      border-color: transparent;
+  }
+
+  /* Remove text decoration on hover */
+  .blog_right_sidebar .newsletter_widget .bbtns:hover {
+      text-decoration: none;
+  }
+  .form-control:focus{
+      border-color: none;
+      box-shadow: none;
+  }
+  input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .praveendon{
+      font-size: 12px;
+  line-height: 24px;
+  color: #cccccc;
+  border: 1px solid #eeeeee;
+  border-left: 0px;
+  border-radius: 0px;
+    }
+    .input-group>.praveendon {
+      position: relative;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      width: 1%;
+      margin-bottom: 0;
+  }
+  .praveendon {
+      display: block;
+      width: 100%;
+      height: calc(2.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      /*border: 1px solid #ced4da;*/
+      border-radius: 0.25rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  .praveendon:focus{
+    border-color: none;
+    box-shadow: none;
+  }
+  .comment-form textarea.praveendon {
+    height: 140px;
+    resize: none;
+  }
+  button, input {
+      overflow: visible;
+  }
+  .praveendon:focus{
+      border-color: none;
+      box-shadow:none;
+  }
+  .blog_right_sidebar .newsletter_widget .praveendon:focus {/*very very important*/
+      outline: none;
+      box-shadow: none;
+  }
+
+
+  /*next css*/
+  .list {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+  }
+  .blog_right_sidebar .tag_cloud_widget ul li a {
+      display: inline-block;
+      border: 1px solid #eee;
+      background: #fff;
+      padding: 0px 13px;
+      margin-bottom: 8px;
+      transition: all 0.3s ease 0s;
+      color: #777777;
+      font-size: 14px;
+  }
+  .blog_right_sidebar .tag_cloud_widget ul li {
+      display: inline-block;
+  }
+  .blog_right_sidebar .tag_cloud_widget ul li a :hover{
+      text-decoration: none;
+  }
+  .tag_cloud_widget a {
+      text-decoration: none;
+      
+  }
+  .tag_cloud_widget a:hover{
+    background-color: #3face4;
+    color:white;
+      
+  }
+  .blog_right_sidebar .tag_cloud_widget ul li a:hover {
+      background-color: #3face4;
+      color:white;
+  }
+
+    </style>
+</head>
+<body>
+    
+    <section class="grid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <!-- Logos to the left -->
+            <div class="d-flex align-items-center  grid_firstcontent">
+              <a class="navbar-brand mr-4" href="#">
+                <div class="iconpadding">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand mr-4" href="#">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand mr-4" href="#">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1.5C6.203 1.5 1.5 6.203 1.5 12S6.203 22.5 12 22.5 22.5 17.802 22.5 12 17.797 1.5 12 1.5Zm6.667 4.84a8.736 8.736 0 0 1 2.062 5.08c-1.892-.098-4.156-.098-5.972.071-.23-.58-.465-1.148-.722-1.695 2.094-.908 3.707-2.1 4.632-3.456ZM12 3.25a8.71 8.71 0 0 1 5.584 2.013c-.952 1.202-2.445 2.25-4.304 3.04-1.018-1.881-2.188-3.5-3.436-4.774A8.79 8.79 0 0 1 12 3.249Zm-3.96.957c1.264 1.258 2.45 2.86 3.49 4.734-1.975.604-4.239.95-6.655.95a21.6 21.6 0 0 1-1.35-.044 8.755 8.755 0 0 1 4.515-5.64Zm-4.774 7.377c.498.022 1.001.033 1.51.028 2.756-.033 5.32-.465 7.525-1.172.208.432.405.875.59 1.329a5.41 5.41 0 0 0-.782.234c-3.013 1.266-5.386 3.305-6.671 5.772A8.719 8.719 0 0 1 3.25 12c0-.14.005-.279.016-.416ZM12 20.75a8.699 8.699 0 0 1-5.365-1.843c1.165-2.308 3.243-4.219 5.863-5.403.246-.115.574-.208.951-.29.313.864.592 1.76.837 2.69a31.79 31.79 0 0 1 .808 4.272A8.678 8.678 0 0 1 12 20.75Zm4.73-1.394a30.34 30.34 0 0 0-1.444-6.388c1.718-.14 3.774-.12 5.41 0a8.741 8.741 0 0 1-3.965 6.388Z"></path>
+                  </svg>
+              </a>
+              <a class="navbar-brand" href="#">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+                    <path d="M3 12h4.5"></path>
+                    <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+                    <path d="M16 6h3"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+            <!-- Menu items to the right -->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+              <ul class="navbar-nav grid_secondcontent">
+                <li class="nav-item priya ">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                  <a class="nav-link" href="#">012-6532-568-9746</a>
+                </li>
+                <div class="praveenHeading"></div>
+                <li class="nav-item priya1">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M19.2 5H4.8c-.99 0-1.791.81-1.791 1.8L3 17.6c0 .99.81 1.8 1.8 1.8h14.4c.99 0 1.8-.81 1.8-1.8V6.8c0-.99-.81-1.8-1.8-1.8Zm0 12.6H4.8v-9l7.2 4.5 7.2-4.5v9ZM4.8 6.8l7.2 4.5 7.2-4.5H4.8Z" clip-rule="evenodd"></path>
+                  </svg>
+                  <a class="nav-link" href="#">EMERGENCY@COLORLIB.COM</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+
+    <section class="myprojectNav">
+
+      <nav id="navtop" class=" navbar  navbar-expand-lg navbar-light " style="background-color:#F8F8F8">
+          <div class="container-fluid">
+              <a class="navbar-brand myprojectNav_firstcontent" href="#"><img src="logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 4.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5ZM2 9.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5ZM2.5 14a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-15Z" fill="#00a2ff" class="fill-212121 fill-3face4 fill-039ef2"></path></svg>
+              </span>
+            </button>
+
+            <div>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class=" justify-content-end navbar-nav myprojectNav_secondcontent">
+                  <li class="nav-item">
+                    <a class="nav-link pravnav"id="navbold" href="index.html" >HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pravnav" id="navbold" href="departments.html">DEPARTMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link pravnav" id="navbold" href="doctors.html">DOCTORS</a>
+                  </li>
+      
+                </li>
+                <li class="nav-item dropdown dropdown-hover ">
+                  <a class="nav-link dropdown-toggle pravnav"id="navbold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PAGES</a>
+                  <ul class="dropdown-menu dropdown-menu-hover " >
+                    <li><a class="dropdown-item" id="drop1" href="about.html">ABOUT</a></li>
+                    <li><a class="dropdown-item"  id="drop1" href="services.html">SERVICES</a></li>
+                    <li><a class="dropdown-item"  id="drop1" href="NavElements.html">ELEMENTS</a></li>
+                  </ul>
+                </li>
+      
+                  </li>
+                  <li class="nav-item dropdown dropdown-hover ">
+                    <a class="nav-link dropdown-toggle pravnav"id="navbold" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">BLOG</a>
+                    <ul class="dropdown-menu dropdown-menu-hover">
+                      <li><a class="dropdown-item"  id="drop1" href="blog.html">BLOG</a></li>
+                      <li><a class="dropdown-item"  id="drop1" href="blogDetails.html">BLOG DETAILS</a></li>
+                    </ul>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link pravnav"id="navbold" href="contact.html">CONTACT</a>
+                  </li>
+                </ul>
+
+            </div>
+            </div>
+          </div>
+        </nav>
+    </section>
+    
+
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+        <div class="banner_content text-left departmenth2">
+        <h2>Blog Details</h2>
+        <div class="page_link departmentinterior">
+        <a href="index.html">Home <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="m12.563 5.25 6.75 6.75-6.75 6.75"></path>
+            <path d="M18.375 12H4.687"></path>
+          </svg></a>
+        <a href="blogDetails.html">Blog Details</a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="blog_area single-post-area p_120">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-8 posts-list">
+        <div class="single-post row">
+        <div class="col-lg-12">
+        <div class="feature-img">
+        <img class="img-fluid" src="features-img1.jpg" alt="">
+        </div>
+        </div>
+        <div class="col-lg-3  col-md-3">
+        <div class="blog_info text-right">
+        <div class="post_tag">
+        <a href="#">Food,</a>
+        <a class="active" href="#">Technology,</a>
+        <a href="#">Politics,</a>
+        <a href="#">Lifestyle</a>
+        </div>
+        <ul class="blog_meta list">
+        <li>
+        <a href="#">Mark wiens
+            <svg width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.125 6.75c-.184 2.478-2.063 4.5-4.125 4.5-2.063 0-3.945-2.021-4.125-4.5-.188-2.578 1.64-4.5 4.125-4.5 2.484 0 4.312 1.969 4.125 4.5Z"></path>
+                <path d="M12 14.25c-4.078 0-8.217 2.25-8.983 6.497-.092.512.197 1.003.733 1.003h16.5c.536 0 .826-.491.734-1.003C20.217 16.5 16.078 14.25 12 14.25Z"></path>
+                </svg>
+        </a>
+        </li>
+        <li>
+        <a href="#">12 Dec, 2017
+            <svg width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 3.75h-15A2.25 2.25 0 0 0 2.25 6v13.5a2.25 2.25 0 0 0 2.25 2.25h15a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M13.875 12a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M17.625 12a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M13.875 15.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M17.625 15.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M6.375 15.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M10.125 15.75a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M6.375 19.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M10.125 19.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path fill="currentColor" stroke="none" d="M13.875 19.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z"></path>
+                <path d="M6 2.25v1.5"></path>
+                <path d="M18 2.25v1.5"></path>
+                <path d="M21.75 7.5H2.25"></path>
+              </svg>
+        </a>
+        </li>
+        <li>
+        <a href="#">1.2M Views
+            <svg width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.984 5.25c-3.653 0-7.401 2.115-10.351 6.344a.75.75 0 0 0-.013.833c2.267 3.548 5.964 6.323 10.364 6.323 4.352 0 8.125-2.783 10.397-6.34a.757.757 0 0 0 0-.819C20.104 8.076 16.303 5.25 11.984 5.25Z"></path>
+                <path d="M12 15.75a3.75 3.75 0 1 0 0-7.5 3.75 3.75 0 0 0 0 7.5Z"></path>
+              </svg>
+        </a>
+        </li>
+        <li>
+        <a href="#">06 Comments
+            <svg width="35" height="35" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.1 17.813c.057-.206-.066-.491-.184-.697a2.007 2.007 0 0 0-.12-.178 9.366 9.366 0 0 1-1.546-5.156C2.233 6.52 6.596 2.25 11.992 2.25c4.705 0 8.633 3.26 9.55 7.587a9.32 9.32 0 0 1 .208 1.952c0 5.269-4.195 9.606-9.59 9.606-.858 0-2.016-.216-2.647-.393a17.714 17.714 0 0 1-1.425-.474A1.46 1.46 0 0 0 7 20.545l-3.18 1.148a.748.748 0 0 1-.218.057.45.45 0 0 1-.45-.457.744.744 0 0 1 .029-.154l.92-3.326Z"></path>
+                <path fill="currentColor" stroke="none" d="M7.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                <path fill="currentColor" stroke="none" d="M12 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                <path fill="currentColor" stroke="none" d="M16.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+              </svg>
+        </a>
+        </li>
+        </ul>
+        <ul class="social-links">
+        <li>
+        <a href="#">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+              </svg>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+              </svg>
+        </a>
+        </li>
+        <li>
+        <a href="#">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+              </svg>
+        </a>
+        </li>
+        <li>
+         <a href="#">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+                <path d="M3 12h4.5"></path>
+                <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+                <path d="M16 6h3"></path>
+              </svg>
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        <div class="col-lg-9 col-md-9 blog_details">
+        <h2>Astronomy Binoculars A Great Alternative</h2>
+        <p class="excert">
+        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+        on boot camp when you can get the MCSE study materials yourself at a fraction.
+        </p>
+        <p>
+        Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot
+        camp when you can get the MCSE study materials yourself at a fraction of the camp price.
+        However, who has the willpower to actually sit through a self-imposed MCSE training. who
+        has the willpower to actually sit through a self-imposed
+        </p>
+        <p>
+        Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot
+        camp when you can get the MCSE study materials yourself at a fraction of the camp price.
+        However, who has the willpower to actually sit through a self-imposed MCSE training. who
+        has the willpower to actually sit through a self-imposed
+        </p>
+        </div>
+    
+    
+        
+    <div class="col-lg-12">
+        <div class="quotes">
+        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+        on boot camp when you can get the MCSE study materials yourself at a fraction of the camp
+        price. However, who has the willpower to actually sit through a self-imposed MCSE training.
+        </div>
+    <div class="row">
+        <div class="col-6">
+        <img class="img-fluid" src="post-imgs1.jpg" alt="">
+        </div>
+        <div class="col-6">
+        <img class="img-fluid" src="post-imgs2.jpg" alt="">
+        </div>
+        <div class="col-lg-12 mt-25 blogdetailpara">
+        <p>
+        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+        on boot camp when you can get the MCSE study materials yourself at a fraction of
+        the camp price. However, who has the willpower.
+        </p>
+        <p>
+        MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money
+        on boot camp when you can get the MCSE study materials yourself at a fraction of
+        the camp price. However, who has the willpower.
+        </p>
+        </div>
+        </div>
+        </div>
+        </div>
+    
+        <div class="navigation-area">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 nav-left navleftpraveen flex-row d-flex justify-content-start align-items-center">
+                    <div class="thumb">
+                        <a href="#">
+                            <img class="img-fluid" src="previ.jpg" alt="">
+                            <div class="arrow">
+                                <a href="#">
+                                    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M9.248 17.648a1.2 1.2 0 0 1-1.696 0l-4.8-4.8a1.2 1.2 0 0 1 0-1.696l4.8-4.8a1.2 1.2 0 0 1 1.696 1.696L6.497 10.8H20.4a1.2 1.2 0 1 1 0 2.4H6.497l2.751 2.752a1.2 1.2 0 0 1 0 1.696Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="detials">
+                        <p>Prev Post</p>
+                        <a href="#">
+                            <h4>Space The Final Frontier</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 nav-right navpraveen flex-row d-flex justify-content-end align-items-center">
+                    <div class="detials">
+                        <p>Next Post</p>
+                        <a href="#">
+                            <h4>Telescopes 101</h4>
+                        </a>
+                    </div>
+                    <div class="thumb">
+                        <a href="#">
+                            <img class="img-fluid" src="nexti.jpg" alt="">
+                            <div class="arrow">
+                                <a href="#">
+                                    <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14.752 6.352a1.2 1.2 0 0 1 1.696 0l4.8 4.8a1.2 1.2 0 0 1 0 1.696l-4.8 4.8a1.2 1.2 0 0 1-1.696-1.696l2.751-2.752H3.6a1.2 1.2 0 1 1 0-2.4h13.903l-2.751-2.752a1.2 1.2 0 0 1 0-1.696Z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="comments-area">
+            <h4>05 Comments</h4>
+            <div class="comment-list">
+            <div class="single-comment justify-content-between d-flex">
+            <div class="user justify-content-between d-flex">
+            <div class="thumb">
+            <img src="cb1.jpg" alt="">
+            </div>
+            <div class="desc">
+            <h5>
+            <a href="#">Emilly Blunt</a>
+            </h5>
+            <p class="date">December 4, 2017 at 3:12 pm </p>
+            <p class="comment">
+            Never say goodbye till the end comes!
+            </p>
+            </div>
+            </div>
+            <div class="reply-btn">
+            <a href="" class="btn-reply text-uppercase">reply</a>
+            </div>
+            </div>
+            </div>
+    
+            <div class="comment-list left-padding">
+            <div class="single-comment justify-content-between d-flex">
+            <div class="user justify-content-between d-flex">
+            <div class="thumb">
+            <img src="cb2.jpg" alt="">
+            </div>
+            <div class="desc">
+            <h5>
+            <a href="#">Elsie Cunningham</a>
+            </h5>
+            <p class="date">December 4, 2017 at 3:12 pm </p>
+            <p class="comment">
+            Never say goodbye till the end comes!
+            </p>
+            </div>
+            </div>
+            <div class="reply-btn">
+            <a href="" class="btn-reply text-uppercase">reply</a>
+            </div>
+            </div>
+            </div>
+    
+            <div class="comment-list left-padding">
+            <div class="single-comment justify-content-between d-flex">
+            <div class="user justify-content-between d-flex">
+            <div class="thumb">
+            <img src="cb3.jpg" alt="">
+            </div>
+            <div class="desc">
+            <h5>
+            <a href="#">Annie Stephens</a>
+            </h5>
+            <p class="date">December 4, 2017 at 3:12 pm </p>
+            <p class="comment">
+            Never say goodbye till the end comes!
+            </p>
+            </div>
+            </div>
+            <div class="reply-btn">
+            <a href="" class="btn-reply text-uppercase">reply</a>
+            </div>
+            </div>
+            </div>
+    
+            <div class="comment-list">
+            <div class="single-comment justify-content-between d-flex">
+            <div class="user justify-content-between d-flex">
+            <div class="thumb">
+            <img src="cb4.jpg" alt="">
+            </div>
+            <div class="desc">
+            <h5>
+            <a href="#">Maria Luna</a>
+            </h5>
+            <p class="date">December 4, 2017 at 3:12 pm </p>
+            <p class="comment">
+            Never say goodbye till the end comes!
+            </p>
+            </div>
+            </div>
+            <div class="reply-btn">
+            <a href="" class="btn-reply text-uppercase">reply</a>
+            </div>
+            </div>
+            </div>
+    
+            <div class="comment-list">
+            <div class="single-comment justify-content-between d-flex">
+            <div class="user justify-content-between d-flex">
+            <div class="thumb">
+            <img src="cb5.jpg" alt="">
+            </div>
+            <div class="desc">
+            <h5>
+            <a href="#">Ina Hayes</a>
+            </h5>
+            <p class="date">December 4, 2017 at 3:12 pm </p>
+            <p class="comment">
+            Never say goodbye till the end comes!
+            </p>
+            </div>
+            </div>
+            <div class="reply-btn">
+            <a href="" class="btn-reply text-uppercase">reply</a>
+            </div>
+            </div>
+            </div>
+        </div>
+    
+        <div class="comment-form">
+        <h4>Leave a Reply</h4>
+        <form>
+        <div class="form-group form-inline">
+        <div class="form-group col-lg-6 col-md-6 name">
+        <input type="text" class="praveendon" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+        </div>
+        <div class="form-group col-lg-6 col-md-6 email">
+        <input type="email" class="praveendon" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+        </div>
+        </div>
+        <div class="form-group">
+        <input type="text" class="praveendon" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+        </div>
+        <div class="form-group">
+        <textarea class="praveendon mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+        </div>
+        <a href="#" class="primary-btn submit_btn">Post Comment</a>
+        </form>
+        </div>
+        </div>
+
+<!-- right side starts here -->
+    <div class="col-lg-4">
+        <div class="blog_right_sidebar">
+        <aside class="single_sidebar_widget search_widget">
+        <div class="input-group">
+        <input type="text" class="form-control"  placeholder="Search Posts" >
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="button">
+        <i class="lnr lnr-magnifier"> <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727v0Z"></path>
+            <path d="M15.857 15.86 21 21.001"></path>
+          </svg></i>
+        
+        </button>
+        </span>
+    </div>
+
+
+
+
+<div class="br"></div>
+        </aside>
+
+<aside class="single_sidebar_widget author_widget">
+<img class="author_img rounded-circle" src="authorr.png" alt="">
+<h4>Charlie Barber</h4>
+<p>Senior blog writer</p>
+<div class="social_icon">
+<a href="#">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+      </svg>
+</a>
+<a href="#">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+      </svg>
+</a>
+<a href="#">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 1.5C6.202 1.5 1.5 6.323 1.5 12.267c0 4.758 3.01 8.79 7.181 10.214a.82.82 0 0 0 .178.019c.39 0 .54-.286.54-.534 0-.258-.01-.933-.015-1.833a4.802 4.802 0 0 1-1.059.126c-2.02 0-2.48-1.57-2.48-1.57-.478-1.242-1.167-1.575-1.167-1.575-.914-.642-.005-.66.066-.66h.004c1.055.093 1.608 1.115 1.608 1.115.525.919 1.228 1.176 1.857 1.176a2.953 2.953 0 0 0 1.2-.28c.093-.695.365-1.168.665-1.44-2.33-.272-4.781-1.195-4.781-5.32 0-1.177.408-2.138 1.078-2.888-.108-.272-.469-1.369.103-2.85a.874.874 0 0 1 .235-.023c.38 0 1.237.145 2.653 1.13a9.76 9.76 0 0 1 5.259 0c1.416-.985 2.273-1.13 2.653-1.13a.873.873 0 0 1 .235.023c.571 1.481.21 2.578.103 2.85.67.755 1.078 1.716 1.078 2.888 0 4.134-2.456 5.043-4.796 5.31.375.333.713.99.713 1.993 0 1.439-.014 2.601-.014 2.953 0 .253.145.539.534.539a.9.9 0 0 0 .188-.019c4.176-1.425 7.181-5.46 7.181-10.214C22.5 6.323 17.798 1.5 12 1.5Z"></path>
+      </svg>
+</a>
+<a href="#">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+        <path d="M3 12h4.5"></path>
+        <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+        <path d="M16 6h3"></path>
+      </svg>
+</a>
+</div>
+<p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should
+have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits
+detractors.
+</p>
+<div class="br"></div>
+</aside>
+
+
+
+<aside class="single_sidebar_widget popular_post_widget">
+    <h3 class="widget_title">Popular Posts</h3>
+    <div class="media post_item">
+    <img src="posts1.jpg" alt="post">
+    <div class="media-body">
+    <a href="single-blog.html">
+    <h3>Space The Final Frontier</h3>
+    </a>
+    <p>02 Hours ago</p>
+    </div>
+    </div>
+    <div class="media post_item">
+    <img src="posts2.jpg" alt="post">
+    <div class="media-body">
+    <a href="single-blog.html">
+    <h3>The Amazing Hubble</h3>
+    </a>
+    <p>02 Hours ago</p>
+    </div>
+    </div>
+    <div class="media post_item">
+    <img src="posts3.jpg" alt="post">
+    <div class="media-body">
+    <a href="single-blog.html">
+    <h3>Astronomy Or Astrology</h3>
+    </a>
+    <p>03 Hours ago</p>
+    </div>
+    </div>
+    <div class="media post_item">
+    <img src="posts4.jpg" alt="post">
+    <div class="media-body">
+    <a href="single-blog.html">
+    <h3>Asteroids telescope</h3>
+    </a>
+    <p>01 Hours ago</p>
+    </div>
+    </div>
+    <div class="br"></div>
+    </aside>
+
+
+    
+
+<aside class="single_sidebar_widget ads_widget">
+    <a href="#">
+    <img class="img-fluid" src="adds.jpg" alt="">
+    </a>
+    <div class="br"></div>
+    </aside>
+
+
+
+<aside class="single_sidebar_widget post_category_widget">
+    <h4 class="widget_title">Post Catgories</h4>
+    <ul class="list cat-list">
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Technology</p>
+    <p>37</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Lifestyle</p>
+    <p>24</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Fashion</p>
+    <p>59</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Art</p>
+    <p>29</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Food</p>
+    <p>15</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Architecture</p>
+    <p>09</p>
+    </a>
+    </li>
+
+    <li>
+    <a href="#" class="d-flex justify-content-between">
+    <p>Adventure</p>
+    <p>44</p>
+    </a>
+    </li>
+
+
+    </ul>
+    <div class="br"></div>
+    </aside>
+
+
+
+<aside class="single-sidebar-widget newsletter_widget">
+    <h4 class="widget_title">Newsletter</h4>
+    <p>
+    Here, I focus on a range of items and features that we use in life without giving them a second thought.
+    </p>
+    <div class="form-group d-flex flex-row">
+    <div class="input-group">
+    <div class="input-group-prepend">
+    <div class="input-group-text">
+   
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2l.01-12c0-1.1.89-2 1.99-2Zm8 9 8-5V6l-8 5-8-5v2l8 5Z" clip-rule="evenodd"></path>
+          </svg>
+    
+    </div>
+    </div>
+
+    <input type="text" class="praveendon" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
+    </div>
+     <a href="#" class="bbtns">Subcribe</a>
+    </div>
+    <p class="text-bottom">You can unsubscribe at any time</p>
+    <div class="br"></div>
+    </aside>
+    
+
+
+    
+<aside class="single-sidebar-widget tag_cloud_widget">
+    <h4 class="widget_title">Tag Clouds</h4>
+    <ul class="list">
+    <li>
+    <a href="#">Technology</a>
+    </li>
+    <li>
+    <a href="#">Fashion</a>
+    </li>
+    <li>
+    <a href="#">Architecture</a>
+    </li>
+    <li>
+    <a href="#">Fashion</a>
+    </li>
+    <li>
+    <a href="#">Food</a>
+    </li>
+    <li>
+    <a href="#">Technology</a>
+    </li>
+    <li>
+    <a href="#">Lifestyle</a>
+    </li>
+    <li>
+    <a href="#">Art</a>
+    </li>
+    <li>
+    <a href="#">Adventure</a>
+    </li>
+    <li>
+    <a href="#">Food</a>
+    </li>
+    <li>
+    <a href="#">Lifestyle</a>
+    </li>
+    <li>
+    <a href="#">Adventure</a>
+    </li>
+    </ul>
+    </aside>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+    <section class="footer">
+  
+      <footer class="footer-area section_gap">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-6">
+              <div class="single-footer-widget">
+                <h6>Top Products</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Managed Website</a></li>
+                  <li><a href="#">Manage Reputation</a></li>
+                  <li><a href="#">Power Tools</a></li>
+                  <li><a href="#">Marketing Service</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-footer-widget">
+                <h6 class="mb-20">Contact Us</h6>
+                <p>
+                  56/8, Santa bullevard, Rocky beach, San fransisco, Los angeles, USA
+                </p>
+                <h3>012-6532-568-9746</h3>
+                <h3>012-6532-568-97468</h3>
+    
+              </div>
+              <div class="footermidgap"></div>
+            </div>
+    
+            <div class="col-lg-6 col-md-12">
+              <div class="single-footer-widget">
+                <h6>Newsletter</h6>
+                <p>You can trust us. we only send promo offers, not a single spam.</p>
+                <form>
+                  <div class="form-group row align-items-center">
+                    <div class="col-lg-7 col-md-6 col-sm-12 inputproblem">
+    
+                      <input name="EMAIL" placeholder="Your Email Address" required="" type="email" class="form-control forming" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                      <button class="btn btn-primary footerbutton">Get Started <span ><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg></span></button>
+                    </div>
+                  </div>
+                  <div class="info"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row footer-bottom d-flex justify-content-between">
+            <p class="col-lg-8 col-sm-12 footer-text m-0 footera">
+              &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | This template is made with<a href="#">
+                <svg  style="color:#61aaf8;" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.544 3.75c-3.043 0-4.543 3-4.543 3s-1.5-3-4.544-3C4.984 3.75 3.026 5.82 3 8.288c-.051 5.125 4.066 8.77 8.579 11.832a.75.75 0 0 0 .843 0c4.512-3.063 8.63-6.707 8.578-11.832-.025-2.469-1.983-4.538-4.456-4.538Z"></path>
+                </svg>
+              </a> by <a style="color:#61aaf8;" href="https://colorlib.com/" target="_blank">Colorlib</a>
+            </p>
+    
+            <div class="col-lg-4 col-sm-12 footer-social footericoncontent" >
+    
+              <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"></path>
+              </svg></a>
+              <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.25 5.133a9.46 9.46 0 0 1-2.65.717 4.57 4.57 0 0 0 2.03-2.512c-.908.53-1.9.903-2.932 1.101A4.647 4.647 0 0 0 16.327 3c-2.55 0-4.615 2.034-4.615 4.542a4.37 4.37 0 0 0 .119 1.036A13.158 13.158 0 0 1 2.315 3.83a4.485 4.485 0 0 0-.627 2.283c0 1.574.821 2.967 2.062 3.782a4.57 4.57 0 0 1-2.1-.567v.056c0 2.204 1.595 4.036 3.704 4.454a4.752 4.752 0 0 1-1.216.159c-.291 0-.582-.028-.868-.085.587 1.805 2.294 3.118 4.315 3.155a9.356 9.356 0 0 1-6.835 1.88A13.063 13.063 0 0 0 7.816 21c8.501 0 13.146-6.923 13.146-12.928 0-.197-.006-.394-.015-.586a9.304 9.304 0 0 0 2.303-2.353Z"></path>
+              </svg></a>
+              <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1.5C6.203 1.5 1.5 6.203 1.5 12S6.203 22.5 12 22.5 22.5 17.802 22.5 12 17.797 1.5 12 1.5Zm6.667 4.84a8.736 8.736 0 0 1 2.062 5.08c-1.892-.098-4.156-.098-5.972.071-.23-.58-.465-1.148-.722-1.695 2.094-.908 3.707-2.1 4.632-3.456ZM12 3.25a8.71 8.71 0 0 1 5.584 2.013c-.952 1.202-2.445 2.25-4.304 3.04-1.018-1.881-2.188-3.5-3.436-4.774A8.79 8.79 0 0 1 12 3.249Zm-3.96.957c1.264 1.258 2.45 2.86 3.49 4.734-1.975.604-4.239.95-6.655.95a21.6 21.6 0 0 1-1.35-.044 8.755 8.755 0 0 1 4.515-5.64Zm-4.774 7.377c.498.022 1.001.033 1.51.028 2.756-.033 5.32-.465 7.525-1.172.208.432.405.875.59 1.329a5.41 5.41 0 0 0-.782.234c-3.013 1.266-5.386 3.305-6.671 5.772A8.719 8.719 0 0 1 3.25 12c0-.14.005-.279.016-.416ZM12 20.75a8.699 8.699 0 0 1-5.365-1.843c1.165-2.308 3.243-4.219 5.863-5.403.246-.115.574-.208.951-.29.313.864.592 1.76.837 2.69a31.79 31.79 0 0 1 .808 4.272A8.678 8.678 0 0 1 12 20.75Zm4.73-1.394a30.34 30.34 0 0 0-1.444-6.388c1.718-.14 3.774-.12 5.41 0a8.741 8.741 0 0 1-3.965 6.388Z"></path>
+              </svg></a>
+              <a href="#"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 18V6h4.5a3 3 0 1 1 0 6 3 3 0 0 1 0 6H3Z"></path>
+                <path d="M3 12h4.5"></path>
+                <path d="M14 13h7a3.5 3.5 0 1 0-7 0v2a3.5 3.5 0 0 0 6.64 1"></path>
+                <path d="M16 6h3"></path>
+              </svg></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.firstContainer{
+    overflow: hidden;
+
+  }
+  .procedure p {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777777;
+    /*border: 2px solid red;*/
+  }
+  .procedure h1 {
+    font-size: 36px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    /*border: 2px solid red;*/
+  }
+  .proceduregap {
+    height: 20px;
+  }
+  .procedurefrontgap{
+    height:120px;
+  }
+  .procedureendgap{
+    height:80px;
+  }
